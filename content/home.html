@@ -307,61 +307,8 @@
         data() {
             return {
                 isActive: false,
-                items: [
-                    {
-                        title: "Access the BD Center",
-                        icon: 'A',
-                        content: [
-                            {
-                                text: "First time access to the BD Center",
-                                link: "./recipes/access_bdc/seo.first_time_use"
-                            },
-                            {
-                                text: "Run a Docker container",
-                                link: "./recipes/access_bdc/run_container.html"
-                            },
-                        ],
-                        link: './recipes/access_bdc.html'
-                    },
-                    {
-                        title: 'slicer-env',
-                        icon: 'SL',
-                        content: [
-                            { text: "How to use the container", link: "./recipes/accessibility/sftp.html"},
-                            { text: "Load and segment microCT image", link: "/recipes/accessibility/aspera.html"},
-                        ],
-                        link: './recipes/accessibility.html'
-                    },
-                    {
-                        title: 'sc-env',
-                        icon: 'SC',
-                        content: [
-                            {
-                                text: "Selecting terminologies and ontologies",
-                                link: "./recipes/interoperability/selecting-ontologies.html"
-                            },
-                            {
-                                text: "Creating a metadata profile",
-                                link: "./recipes/interoperability/creating-minimal-metadata-profiles.html"
-                            },
-                        ],
-                        link: './recipes/interoperability.html'
-                    },
-                    {
-                        title: 'Reusability',
-                        icon: 'R',
-                        content: [
-                            {
-                                text: "Data licenses",
-                                link: "./recipes/reusability/ATI_licensing_data.html"
-                            },
-                            {
-                                text: "Declaring data’s permitted uses",
-                                link: "./recipes/reusability/expressing-data-use.html"
-                            },
-                        ],
-                        link: './recipes/reusability.html'
-                    },
+                items:[
+
                 ],
                 recipes: [
                     {
@@ -519,36 +466,36 @@
                 <v-col cols="12" class="text-h4 primary--text font-weight-bold text-center">
                     Or browse the various sections
                 </v-col>
-                <v-col cols="3" class="rotate-0">
+                <v-col cols="3">
                     <v-row>
-                        <FairCard :item="items[0]"> </FairCard>
+                        <Recipe :recipe="recipes[0]" />
                     </v-row>
                     <v-row>
-                       <Recipe :recipe="recipes[0]" />
+                       <Recipe :recipe="recipes[4]" />
                     </v-row>
                 </v-col>
                 <v-col cols="3">
-                    <v-row>
-                        <FairCard :item="items[1]"> </FAIRCard>
-                    </v-row>
                     <v-row>
                         <Recipe :recipe="recipes[1]" />
                     </v-row>
+                    <v-row>
+                        <Recipe :recipe="recipes[5]" />
+                    </v-row>
                 </v-col>
                 <v-col cols="3">
                     <v-row>
-                        <FairCard :item="items[2]"> </FAIRCard>
-                    </v-row>
-                    <v-row>
                         <Recipe :recipe="recipes[2]" />
                     </v-row>
-                </v-col>
-                <v-col cols="3" class="rotate-3">
                     <v-row>
-                        <FairCard :item="items[3]"> </FAIRCard>
+                        <Recipe :recipe="recipes[6]" />
+                    </v-row>
+                </v-col>
+                <v-col cols="3">
+                    <v-row>
+                        <Recipe :recipe="recipes[3]" />
                     </v-row>
                     <v-row>
-                        <Recipe :recipe="recipes[3]" :disabled="true" />
+                        <Recipe :recipe="recipes[7]" />
                     </v-row>
                 </v-col>
             </v-row>
