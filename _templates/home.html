@@ -70,9 +70,28 @@
             return {
                 isActive: false,
                 items:[
-                    
                 ],
                 recipes: [
+                    {
+                        title: "Access the BD Center",
+                        link: './recipes/access_bdc.html',
+                        icon: "A"
+                    },
+                    {
+                        title: "commbini-env",
+                        link: "./recipes/commbini-env.html",
+                        icon: "C"
+                    },
+                    {
+                        title: "datascience-env",
+                        link: "./recipes/admin_notes.html",
+                        icon: "D"
+                    },
+                    {
+                        title: "fiji-env",
+                        link: "./recipes/fiji-env.html",
+                        icon: "FJ"
+                    },
                     {
                         title: "flowcyto-env",
                         link: "./recipes/flowcyto-env.html",
@@ -208,36 +227,36 @@
                 <v-col cols="12" class="text-h4 primary--text font-weight-bold text-center">
                     Or browse the various sections
                 </v-col>
-                <v-col cols="3" class="rotate-0">
+                <v-col cols="3">
                     <v-row>
-                        <FairCard :item="items[0]"> </FairCard>
+                        <Recipe :recipe="recipes[0]" />
                     </v-row>
                     <v-row>
-                       <Recipe :recipe="recipes[0]" />
+                       <Recipe :recipe="recipes[4]" />
                     </v-row>
                 </v-col>
                 <v-col cols="3">
-                    <v-row>
-                        <FairCard :item="items[1]"> </FAIRCard>
-                    </v-row>
                     <v-row>
                         <Recipe :recipe="recipes[1]" />
                     </v-row>
+                    <v-row>
+                        <Recipe :recipe="recipes[5]" />
+                    </v-row>
                 </v-col>
                 <v-col cols="3">
                     <v-row>
-                        <FairCard :item="items[2]"> </FAIRCard>
-                    </v-row>
-                    <v-row>
                         <Recipe :recipe="recipes[2]" />
                     </v-row>
-                </v-col>
-                <v-col cols="3" class="rotate-3">
                     <v-row>
-                        <FairCard :item="items[3]"> </FAIRCard>
+                        <Recipe :recipe="recipes[6]" />
+                    </v-row>
+                </v-col>
+                <v-col cols="3">
+                    <v-row>
+                        <Recipe :recipe="recipes[3]" />
                     </v-row>
                     <v-row>
-                        <Recipe :recipe="recipes[3]" :disabled="true" />
+                        <Recipe :recipe="recipes[7]" />
                     </v-row>
                 </v-col>
             </v-row>
