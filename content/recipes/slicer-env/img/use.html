@@ -5,70 +5,68 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sc-env</title>
+    <title>How to use the slicer-env container</title>
 
-  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
 
   <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
 
 
   <link rel="stylesheet"
-    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+    href="../../../../_static/vendor/open-sans_all/1.44.1/index.css">
   <link rel="stylesheet"
-    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+    href="../../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
 
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/search-wizard.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/search.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/vuetify.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/animate.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/search-wizard.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/search.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/vuetify.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
 
-  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../../../../_static/js/index.d3f166471bb80abb5163.js">
 
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/js/searchNodal.js"></script>
-    <script src="../../_static/js/mermaid.core.js"></script>
-    <script src="../../_static/js/vue.min.js"></script>
-    <script src="../../_static/js/mermaid.js"></script>
-    <script src="../../_static/js/mermaid.min.js"></script>
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <script src="../../../../_static/js/searchNodal.js"></script>
+    <script src="../../../../_static/js/mermaid.core.js"></script>
+    <script src="../../../../_static/js/vue.min.js"></script>
+    <script src="../../../../_static/js/mermaid.js"></script>
+    <script src="../../../../_static/js/mermaid.min.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://fairplus.github.io/the-fair-cookbook/content/recipes/sc-env.html" />
-    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="slicer-env" href="slicer-env.html" />
-    <link rel="prev" title="image3d-env" href="image3d-env.html" />
+    <script async="async" src="../../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://fairplus.github.io/the-fair-cookbook/content/recipes/slicer-env/img/use.html" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="en" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.6.9/vuetify.js"
@@ -77,10 +75,10 @@
 </script>
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://fairplus.github.io/the-fair-cookbook/content/recipes/sc-env.html" />
+<meta property="og:url"         content="https://fairplus.github.io/the-fair-cookbook/content/recipes/slicer-env/img/use.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="sc-env" />
-<meta property="og:description" content="sc-env      Sections:  " />
+<meta property="og:title"       content="How to use the slicer-env container" />
+<meta property="og:description" content="How to use the slicer-env container  Open the Docker container  Run the command:  bdstart slicer-env  Click on the Slicer GUI link  Open the X11 Session and you" />
  <meta property="og:image"       content="https://fairplus.github.io/the-fair-cookbook/_static/cookbook-logo-small.png" /> 
 <meta name="twitter:card" content="summary" />
   </head>
@@ -108,9 +106,9 @@
             
 
             
-                <a href="../../index.html" style="width: 300px">
+                <a href="../../../../index.html" style="width: 300px">
                     <img
-                        src="../../_static/cookbook-logo-small.png"
+                        src="../../../../_static/cookbook-logo-small.png"
                         class="logo"
                         alt="The FAIR Cookbook"
                         style="width: 100%"
@@ -167,7 +165,7 @@
               flat
               solo
               rounded
-              href="https://github.com/FAIRplus/the-fair-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/recipes/sc-env.html&body=Your%20issue%20content%20here."
+              href="https://github.com/FAIRplus/the-fair-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/recipes/slicer-env/img/use.html&body=Your%20issue%20content%20here."
               class="mt-1"
               target="_blank"
             >
@@ -183,7 +181,7 @@
               flat
               solo
               rounded
-              href="https://github.com/FAIRplus/the-fair-cookbook/edit/main/content/recipes/sc-env.md"
+              href="https://github.com/FAIRplus/the-fair-cookbook/edit/main/content/recipes/slicer-env/img/use.md"
               class="mt-1"
               target="_blank"
             >
@@ -206,8 +204,8 @@
       } },
       methods: {
         search() {
-            if (this.query) window.location.href = `../search-wizard.html?q=` + this.query
-            else window.location.href = `../search-wizard.html`
+            if (this.query) window.location.href = `../../../search-wizard.html?q=` + this.query
+            else window.location.href = `../../../search-wizard.html`
         }
       },
       template: `
@@ -301,7 +299,7 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../search-wizard.html">
+  <a class="reference internal" href="../../../search-wizard.html">
    All Recipes In a Table
   </a>
  </li>
@@ -313,27 +311,27 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="access_bdc.html">
+  <a class="reference internal" href="../../access_bdc.html">
    Access the BD Center
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="access_bdc/first_time_use.html">
+    <a class="reference internal" href="../../access_bdc/first_time_use.html">
      First time use?
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="access_bdc/run_container.html">
+    <a class="reference internal" href="../../access_bdc/run_container.html">
      Run a Docker container
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="access_bdc/mount_kul_drives.html">
+    <a class="reference internal" href="../../access_bdc/mount_kul_drives.html">
      Mount KUL drives
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="access_bdc/update_BD_directory.html">
+    <a class="reference internal" href="../../access_bdc/update_BD_directory.html">
      Update the BDcenter directory
     </a>
    </li>
@@ -342,17 +340,17 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="admin_notes.html">
+  <a class="reference internal" href="../../admin_notes.html">
    Notes for Admins
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="admin_notes/add_user.html">
+    <a class="reference internal" href="../../admin_notes/add_user.html">
      Add user to docker group
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="admin_notes/docker_utils.html">
+    <a class="reference internal" href="../../admin_notes/docker_utils.html">
      Useful Docker commands
     </a>
    </li>
@@ -366,44 +364,44 @@
   DOCKER CONTAINERS
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="commbini-env.html">
+  <a class="reference internal" href="../../commbini-env.html">
    commbini-env
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="datascience-env.html">
+  <a class="reference internal" href="../../datascience-env.html">
    datascience-env
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="fiji-env.html">
+  <a class="reference internal" href="../../fiji-env.html">
    fiji-env
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="flowcyto-env.html">
+  <a class="reference internal" href="../../flowcyto-env.html">
    flowcyto-env
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="image3d-env.html">
+  <a class="reference internal" href="../../image3d-env.html">
    image3d-env
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../sc-env.html">
    sc-env
   </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="slicer-env.html">
+  <a class="reference internal" href="../../slicer-env.html">
    slicer-env
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="slicer-env/use.html">
+    <a class="reference internal" href="../use.html">
      Use the container
     </a>
    </li>
@@ -419,27 +417,27 @@
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="community.html">
+  <a class="reference internal" href="../../community.html">
    Community
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="afterword/people.html">
+    <a class="reference internal" href="../../afterword/people.html">
      Boards and contributors
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="afterword/code_of_conduct.html">
+    <a class="reference internal" href="../../afterword/code_of_conduct.html">
      Code of conduct
     </a>
    </li>
    <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="afterword.html">
+    <a class="reference internal" href="../../afterword.html">
      Platform
     </a>
     <ul class="collapse-ul">
      <li class="toctree-l3">
-      <a class="reference internal" href="afterword/the-turing-way.html">
+      <a class="reference internal" href="../../afterword/the-turing-way.html">
        Leveraging the Turing Way Book
       </a>
      </li>
@@ -452,42 +450,42 @@
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="help.html">
+  <a class="reference internal" href="../../help.html">
    Contribute
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="afterword/contributing.html">
+    <a class="reference internal" href="../../afterword/contributing.html">
      1. How to contribute
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="help/how-to-create-recipe-with-gdoc.html">
+    <a class="reference internal" href="../../help/how-to-create-recipe-with-gdoc.html">
      2. Add via GoogleDoc
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="help/how-to-create-recipe-with-hackmd.html">
+    <a class="reference internal" href="../../help/how-to-create-recipe-with-hackmd.html">
      3. Add via HackMD
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="help/how-to-create-recipe-with-git.html">
+    <a class="reference internal" href="../../help/how-to-create-recipe-with-git.html">
      4. Add via Git
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="help/recipe-template.html">
+    <a class="reference internal" href="../../help/recipe-template.html">
      5. Git recipe template
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="help/tips-tricks.html">
+    <a class="reference internal" href="../../help/tips-tricks.html">
      6. Tips and tricks
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="help/myst.html">
+    <a class="reference internal" href="../../help/myst.html">
      7. Markdown cheatsheet
     </a>
    </li>
@@ -517,11 +515,43 @@
                                         
                                             <v-col class="col-xl-10 col-lg-10 col-md-9 col-12 px-10 pt-10 mt-3">
                                                 
-  <div class="section" id="sc-env">
-<span id="fcb-find"></span><h1>sc-env<a class="headerlink" href="#sc-env" title="Permalink to this headline">¶</a></h1>
-<hr class="docutils" />
-<p>Sections:</p>
-<hr class="docutils" />
+  <div class="section" id="how-to-use-the-slicer-env-container">
+<h1>How to use the slicer-env container<a class="headerlink" href="#how-to-use-the-slicer-env-container" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="open-the-docker-container">
+<h2>Open the Docker container<a class="headerlink" href="#open-the-docker-container" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Run the command:</p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">bdstart</span> <span class="pre">slicer-env</span></code></p>
+<ol class="simple">
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Slicer</span> <span class="pre">GUI</span></code> link</p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">X11</span> <span class="pre">Session</span></code> and you will see Slicer app running</p></li>
+<li><p><em>Optional</em> - Click on the computer icon (up-left) to adjust the screen resolution</p></li>
+</ol>
+</div>
+<div class="section" id="remote-desktop-clipboard">
+<h2>Remote desktop clipboard<a class="headerlink" href="#remote-desktop-clipboard" title="Permalink to this headline">¶</a></h2>
+<p>Text copied in the remote desktop will appear in the clipboard box in noVNC’s interface.</p>
+<p><img alt="" src="content/recipes/slicer-env/img/img/noVNC_clipboard.png" /></p>
+<p>You can then copy the text from that box to access it in your local clipboard.</p>
+<p>Any text put into the clipboard box will be sent to the remote clipboard as well.</p>
+</div>
+<div class="section" id="run-jupyter-lab-server">
+<h2>Run Jupyter Lab server<a class="headerlink" href="#run-jupyter-lab-server" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Inside the Slicer app, go to the <code class="docutils literal notranslate"><span class="pre">Modules</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Developer</span> <span class="pre">Tool</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">JupyterKernel</span></code></p></li>
+<li><p>Select the home folder in <code class="docutils literal notranslate"><span class="pre">Notebook</span> <span class="pre">directory</span></code> (important: <code class="docutils literal notranslate"><span class="pre">/home/researcher/mounted_volume</span></code> is your local <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> folder in the BD center)</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">Jupyter</span> <span class="pre">server</span></code></p></li>
+<li><p>Move to the Python Interactor window (up-right Python button) and run the command:</p></li>
+</ol>
+<p>Remember to <a class="reference external" href="#remote-desktop-clipboard">copy the command via the remote desktop clipboard</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">slicer.util._executePythonModule(&quot;jupyter&quot;,</span> <span class="pre">[&quot;server&quot;,</span> <span class="pre">&quot;list&quot;])</span></code></p>
+<ol class="simple">
+<li><p>Copy the code after <code class="docutils literal notranslate"><span class="pre">token=</span></code> <a class="reference external" href="#remote-desktop-clipboard">via the remote desktop clipboard</a></p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Slicer</span> <span class="pre">Jupyter</span> <span class="pre">(ONLY</span> <span class="pre">after</span> <span class="pre">activation</span> <span class="pre">from</span> <span class="pre">Slicer</span> <span class="pre">GUI)</span></code> link from the terminal you used to start the container</p></li>
+<li><p>Insert the token and JupyterLab will start</p></li>
+</ol>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -537,7 +567,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./content/recipes"
+            path: "./content/recipes/slicer-env/img"
         },
         predefinedOutput: true
     }
@@ -546,7 +576,32 @@
 
                                             </v-col>
                                             <div class="d-none d-md-block col-md-2 bd-toc show collapse custom-bdtoc pt-5">
-                                                <div style="position: fixed"></div>
+                                                <div style="position: fixed">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#open-the-docker-container">
+   Open the Docker container
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#remote-desktop-clipboard">
+   Remote desktop clipboard
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-jupyter-lab-server">
+   Run Jupyter Lab server
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        </div>
                                             </div>
                                         
                                     </v-row>
@@ -555,8 +610,6 @@
                                         <v-row class="mb-5">
                                             <div class='pl-10 prev-next-bottom mr-10' style="width:82%">
                                                 
-<a class='left-prev' id="prev-link" href="image3d-env.html" title="previous page">image3d-env</a>
-<a class='right-next' id="next-link" href="slicer-env.html" title="next page">slicer-env</a>
 
                                             </div>
                                         </v-row>
@@ -573,7 +626,7 @@
 </v-app>
 
 
-  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../../../../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
 
