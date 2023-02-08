@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful Docker commands</title>
+
+  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+
+
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/search-wizard.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/search.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/vuetify.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+
+  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/js/searchNodal.js"></script>
+    <script src="../../../_static/js/mermaid.core.js"></script>
+    <script src="../../../_static/js/vue.min.js"></script>
+    <script src="../../../_static/js/mermaid.js"></script>
+    <script src="../../../_static/js/mermaid.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://fairplus.github.io/the-fair-cookbook/content/recipes/admin_notes/docker_utils.html" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="commbini-env" href="../commbini-env.html" />
+    <link rel="prev" title="Add new user to docker group" href="add_user.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.6.9/vuetify.js"
+        integrity="sha512-cgrSlRKhr/ovJePDoGIdcfZ3wiGcc0fT4Q7hAo0x3P1lyLwUmv2NgJtCo2gzFbxqFjKvNnCfVUjZ1XADm0/ZdQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://fairplus.github.io/the-fair-cookbook/content/recipes/admin_notes/docker_utils.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Useful Docker commands" />
+<meta property="og:description" content="Useful Docker commands      List all running containers  docker container list  Kill running container  docker kill CONTAINERID  Clean system from not properly " />
+ <meta property="og:image"       content="https://fairplus.github.io/the-fair-cookbook/_static/cookbook-logo-small.png" /> 
+<meta name="twitter:card" content="summary" />
+  </head>
+<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+
+
+
+<v-app id="app" class="pa-0">
+    <v-container fluid class="pa-0">
+        <v-row class="pa-0" no-gutters>
+            <v-container fluid class="pa-0">
+                <v-row>
+                    <div class="topbar container-xl fixed-top pl-0 primary lighten-1 py-2" style="height:65px !important;">
+    <div class="topbar-contents row" style="margin: initial !important;">
+        <div class="col topbar-main d-flex align-center">
+            
+                <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                        data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                        aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                        title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            
+
+            
+                <a href="../../../index.html" style="width: 300px">
+                    <img
+                        src="../../../_static/cookbook-logo-small.png"
+                        class="logo"
+                        alt="The FAIR Cookbook"
+                        style="width: 100%"
+                    >
+                </a>
+            
+
+            <v-spacer> </v-spacer>
+            <div class="mr-4 extraButtons">
+                <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger d-flex justify-center align-center" style="height:100%">
+
+    <v-menu offset-y content-class="elevation-0" open-on-hover>
+        <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              id="dropdown-buttons-trigger"
+              color="white"
+              outlined
+              v-bind="attrs"
+              v-on="on"
+              flat
+              solo
+              rounded
+              :fab="$vuetify.breakpoint.mdAndDown"
+              :small="$vuetify.breakpoint.mdAndDown"
+              :class="$vuetify.breakpoint.mdAndDown ? 'pa-0' : ''"
+            >
+                <v-icon :class="$vuetify.breakpoint.lgAndUp ? 'mr-3' : 'mx-1'" left>fab fa-github</v-icon>
+                <span v-if="$vuetify.breakpoint.lgAndUp"> GitHub </span>
+            </v-btn>
+        </template>
+        <div class="homepageMenu d-flex flex-column">
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook"
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mr-3" left>fab fa-github</v-icon>
+                repository
+            </v-btn>
+            
+
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/recipes/admin_notes/docker_utils.html&body=Your%20issue%20content%20here."
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mr-3" left>fas fa-lightbulb</v-icon>
+                open issue
+            </v-btn>
+            
+
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook/edit/main/content/recipes/admin_notes/docker_utils.md"
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mx-3" left>fas fa-pencil-alt</v-icon>
+                suggest edit
+            </v-btn>
+            
+        </div>
+    </v-menu>
+</div>
+
+                <!-- Launch buttons -->
+
+            </div>
+                
+                    <script>
+    Vue.component("Searchfield", {
+      data () { return {
+        query: null
+      } },
+      methods: {
+        search() {
+            if (this.query) window.location.href = `../../search-wizard.html?q=` + this.query
+            else window.location.href = `../../search-wizard.html`
+        }
+      },
+      template: `
+      <div style="width:250px">
+            <v-text-field
+              v-model="query"
+              append-icon="fa-search"
+              label="Search Wizard..."
+              dense
+              rounded
+              single-line
+              solo
+              hide-details
+              class="white primary--text"
+              @click:append="search"
+              @keyup.enter="search"
+            />
+      </div>
+      `
+    })
+</script>
+
+<Searchfield> </Searchfield>
+
+
+
+
+
+
+                
+                
+                
+        </div>
+    </div>
+</div>
+                </v-row>
+                
+                    <v-row class="d-flex">
+                    
+                        <div
+                            class=" bd-sidebar site-navigation show"
+                            id="site-navigation"
+                            style="width:350px"
+                        >
+                            
+                                <div class="nav-drawer d-flex flex-column grey lighten-3" style="height:100%;padding-top: 40px;">
+
+    <div class="testTOC">
+        <script>
+    Vue.component("Navigation", {
+        data() { return { recipes: {} }},
+        methods: {
+            async getData(){
+                const recipes = await fetch('/_static/recipes.json')
+                this.recipes = await recipes.json();
+                this.parseDom()
+            },
+            parseDom() {
+                const links = Array.prototype.slice.call(document.getElementsByClassName("reference internal"))
+                const icon = '<i class="fas fa-play-circle grey lighten-3 secondary--text ml-2"></i>'
+                links.forEach(link => {
+                    const recipeSplit = link.innerText.split(". ")
+                    const recipeName = recipeSplit[recipeSplit.length - 1].trim()
+                    recipeSplit.pop()
+                    recipeSplit.forEach(pref => { pref = pref.trim() })
+                    const prefix = recipeSplit.length > 0 ? recipeSplit.join(".") + "." : null
+                    const content = prefix ? `${prefix} ${recipeName}` : recipeName
+                    if (Object.keys(this.recipes).includes(recipeName)) {
+                        if (this.recipes[recipeName].executable === 'Yes') link.innerHTML = content + icon
+                    }
+                })
+            }
+        },
+        mounted() { this.getData() }
+    })
+</script>
+
+
+<Navigation> </Navigation>
+
+    </div>
+
+    <div class="nav-tree grey px-5 lighten-3 pb-5" style="flex-grow: 1; border-bottom: 1px solid #ccc !important">
+        
+        
+            <nav class="bd-links pt-10" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Recipes at a Glance
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../search-wizard.html">
+   All Recipes In a Table
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  ACCESS THE BIOMEDICAL DATA CENTER
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../access_bdc.html">
+   Access the BD Center
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../access_bdc/first_time_use.html">
+     First time use?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../access_bdc/run_container.html">
+     Run a Docker container
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../access_bdc/mount_kul_drives.html">
+     Mount KUL drives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../access_bdc/update_BD_directory.html">
+     Update the BDcenter directory
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../admin_notes.html">
+   Notes for Admins
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="add_user.html">
+     Add user to docker group
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Useful Docker commands
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  DOCKER CONTAINERS
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../commbini-env.html">
+   commbini-env
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../datascience-env.html">
+   datascience-env
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../fiji-env.html">
+   fiji-env
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../flowcyto-env.html">
+   flowcyto-env
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../image3d-env.html">
+   image3d-env
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sc-env.html">
+   sc-env
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../slicer-env.html">
+   slicer-env
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  JOIN US
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../community.html">
+   Community
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../afterword/people.html">
+     Boards and contributors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../afterword/code_of_conduct.html">
+     Code of conduct
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../afterword.html">
+     Platform
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../afterword/the-turing-way.html">
+       Leveraging the Turing Way Book
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../help.html">
+   Contribute
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../afterword/contributing.html">
+     1. How to contribute
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../help/how-to-create-recipe-with-gdoc.html">
+     2. Add via GoogleDoc
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../help/how-to-create-recipe-with-hackmd.html">
+     3. Add via HackMD
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../help/how-to-create-recipe-with-git.html">
+     4. Add via Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../help/recipe-template.html">
+     5. Git recipe template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../help/tips-tricks.html">
+     6. Tips and tricks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../help/myst.html">
+     7. Markdown cheatsheet
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav>
+        
+        
+             <!-- To handle the deprecated key -->
+
+        
+    </div>
+
+    <div class="text-center px-5 lighten-3 grey py-2">
+        Powered by <a href="https://jupyterbook.org" class="secondary--text">Jupyter Book</a>
+    </div>
+</div>
+                        </div>
+                        
+                            <main class="bd-content" role="main" style="width:1%; flex-grow:1;">
+                                <v-container fluid id="main-content" class="pa-0">
+                                    <v-row class="d-flex">
+                                        
+                                            <v-col class="col-xl-10 col-lg-10 col-md-9 col-12 px-10 pt-10 mt-3">
+                                                
+  <div class="section" id="useful-docker-commands">
+<h1>Useful Docker commands<a class="headerlink" href="#useful-docker-commands" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<div class="section" id="list-all-running-containers">
+<h2>List all running containers<a class="headerlink" href="#list-all-running-containers" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">container</span> <span class="pre">list</span></code></p>
+</div>
+<div class="section" id="kill-running-container">
+<h2>Kill running container<a class="headerlink" href="#kill-running-container" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">kill</span> <span class="pre">CONTAINERID</span></code></p>
+</div>
+<div class="section" id="clean-system-from-not-properly-closed-containers">
+<h2>Clean system from not properly closed containers<a class="headerlink" href="#clean-system-from-not-properly-closed-containers" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">system</span> <span class="pre">prune</span></code></p>
+<hr class="docutils" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/recipes/admin_notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                                            </v-col>
+                                            <div class="d-none d-md-block col-md-2 bd-toc show collapse custom-bdtoc pt-5">
+                                                <div style="position: fixed">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#list-all-running-containers">
+   List all running containers
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kill-running-container">
+   Kill running container
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clean-system-from-not-properly-closed-containers">
+   Clean system from not properly closed containers
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        </div>
+                                            </div>
+                                        
+                                    </v-row>
+
+                                    
+                                        <v-row class="mb-5">
+                                            <div class='pl-10 prev-next-bottom mr-10' style="width:82%">
+                                                
+<a class='left-prev' id="prev-link" href="add_user.html" title="previous page">Add new user to docker group</a>
+<a class='right-next' id="next-link" href="../commbini-env.html" title="next page">commbini-env</a>
+
+                                            </div>
+                                        </v-row>
+                                    
+                                </v-container>
+                            </main>
+                        
+                    
+                </v-row>
+                
+            </v-container>
+        </v-row>
+    </v-container>
+</v-app>
+
+
+  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+
+<!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-171697285-1', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+<v-container fluid>
+    <v-row no-gutter>
+        <v-col cols="12"><footer class="footer" style=" margin-top: 12px;  ">
+    <div class="container-md mt-4">
+      <div class="row" style="display:flex; justify-content: center">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
+            <div class="footerImages">
+              <a href="https://europa.eu/"><img src="/_static/images/logo/eu-flag.png" height="40" alt="EU flag"></a>
+              <a href="https://www.imi.europa.eu/"><img src="/_static/images/logo/imi-logo.png" height="40" alt="IMI logo"></a>
+              <a href="https://efpia.eu"><img src="/_static/images/logo/efpia-logo.png" height="40" alt="EFPIA logo"></a>
+            </div>
+            <div class="mb-3"> Grant agreement 802750 </div>
+          </div>
+          <div class="col-5 col-sm-2 col-xs-5 col-md-2 col-lg-2 col-xl-2">
+              <ul>
+                <li><a href="mailto:fairplus-cookbook@elixir-europe.org"> Contact us </a></li>
+                <li><a href="https://fairplus-project.eu" target="_blank"> FAIRplus </a> </li>
+              </ul>
+          </div>
+          <div class="col-5 col-sm-2 col-xs-5 col-md-2 col-lg-2 col-xl-2">
+              <ul>
+                <li> <a href="https://faircookbook.elixir-europe.org/content/recipes/afterword/people.html  "> Contributors </a> </li> </li>
+                <li> <a href="https://faircookbook.elixir-europe.org/content/recipes/help.html"> How to contribute </a> </li>
+              </ul>
+          </div>
+          <div class="col-12 col-sm-4 col-xs-12 col-md-3 col-lg-3 col-xl-3 pb-5">
+            <a class="mr-3" href="https://elixir-europe.org/" target="_blank"><img src="/_static/images/logo/Elixir/ELIXIR.png" height="50" alt="Elixir logo"></a>
+            <a href="https://fairplus-project.eu/"><img src="https://fairplus-project.eu/images/fairplus-logo.png" alt="FAIRplus logo" style="background:white;padding:5px;height:33px;"></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="padding:0">
+        <div class="row" style="padding:0; margin:0">
+            <div class="col-12 purple-dark">
+                The FAIR Cookbook is licensed under the
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                    Creative Commons Attribution 4.0 International
+                </a> (CC BY 4.0) license.
+            </div>
+        </div>
+        <div class="row extra_footer d-none">
+            <script> mermaid.init() </script>
+        </div>
+    </div>
+
+</footer> </v-col>
+    </v-row>
+</v-container>
+<script type="application/javascript">
+    const vuetify = new Vuetify({
+        theme: {
+            themes: {
+                light: {
+                    primary: '#421C6E',
+                    secondary: '#FC7A4A',
+                    accent: '#8038D1',
+                    error: '#FF5252',
+                    info: '#2196F3',
+                    success: '#7E0038',
+                    warning: '#FFC107'
+                }
+            }
+        },
+        icons: { iconfont: 'fa4' }
+    })
+    const my_vue = new Vue({ el: '#app', vuetify: vuetify })
+
+</script>
+  </body>
+</html>

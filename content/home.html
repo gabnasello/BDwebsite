@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAIR Cookbook</title>
+    <title>Biomedical Data Center</title>
 
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -67,7 +67,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction" href="recipes/introduction/FAIR-cookbook-audience.html" />
+    <link rel="next" title="Search Wizard" href="search-wizard.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="en" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.6.9/vuetify.js"
@@ -78,8 +78,8 @@
 <!-- Opengraph tags -->
 <meta property="og:url"         content="https://fairplus.github.io/the-fair-cookbook/content/home.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="FAIR Cookbook" />
-<meta property="og:description" content="FAIR Cookbook                " />
+<meta property="og:title"       content="Biomedical Data Center" />
+<meta property="og:description" content="Biomedical Data Center        " />
  <meta property="og:image"       content="https://fairplus.github.io/the-fair-cookbook/_static/cookbook-logo-small.png" /> 
 <meta name="twitter:card" content="summary" />
   </head>
@@ -244,32 +244,24 @@
     >
         <div class="homeTitle d-flex flex-column justify-center align-center" style="flex-grow: 1">
             <h1 class="white--text pt-10 mt-10" style="font-size: 50px !important;">
-                The <span class="secondary--text">FAIR</span> Cookbook
-                <span
-                    class="d-flex justify-end align-end mt-1 font-italic"
-                    :class="$vuetify.breakpoint.smAndUp ? 'justify-end' : 'justify-center'"
-                    style="font-size:35px !important"
-                >
-                    for FAIR doers
-                </span>
+                The Biomedical Data Center
             </h1>
             <v-container>
                 <h2 class="white--text text-center pa-4 mt-0">
                     <p style="font-size: 30px !important;">
                         <b :style="$vuetify.breakpoint.mdAndUp ? 'line-height:3.2rem' : '' ">
-                            An online, <span class="secondary--text">open</span> and <span class="secondary--text">live</span>
-                            resource for the Life Sciences with recipes that help you to make
-                            and keep data Findable, Accessible, Interoperable and Reusable; in one word FAIR.
+                            An online, <span class="secondary--text">open</span> and <span class="secondary--text">reproducible</span>
+                            resource for Biomedical Data Science.
                         </b>
                     </p>
                 </h2>
             </v-container>
             <div class="d-flex justify-center align-center">
                 <v-btn x-large class="secondary white--text mr-2" large href="./recipes/introduction/FAIR-cookbook-audience.html">
-                    Learn more
+                    Login
                 </v-btn>
                 <v-btn x-large class="success white--text mx-2" large @click="$vuetify.goTo('#more', {})">
-                    See Recipes
+                    See Documentation
                 </v-btn>
             </div>
         </div>
@@ -317,32 +309,32 @@
                 isActive: false,
                 items: [
                     {
-                        title: "Findability",
-                        icon: 'F',
-                        content: [
-                            {
-                                text: "Unique, persistent identifiers",
-                                link: "./recipes/findability/identifiers.html#fcb-find-identifiers"
-                            },
-                            {
-                                text: "Search engine optimization",
-                                link: "./recipes/findability/seo.html#fcb-find-seo"
-                            },
-                        ],
-                        link: './recipes/findability.html'
-                    },
-                    {
-                        title: 'Accessibility',
+                        title: "Access the BD Center",
                         icon: 'A',
                         content: [
-                            { text: "Transferring data with SFTP", link: "./recipes/accessibility/sftp.html"},
-                            { text: "Downloading data with Aspera", link: "/recipes/accessibility/aspera.html"},
+                            {
+                                text: "First time access to the BD Center",
+                                link: "./recipes/access_bdc/seo.first_time_use"
+                            },
+                            {
+                                text: "Run a Docker container",
+                                link: "./recipes/access_bdc/run_container.html"
+                            },
+                        ],
+                        link: './recipes/access_bdc.html'
+                    },
+                    {
+                        title: 'slicer-env',
+                        icon: 'SL',
+                        content: [
+                            { text: "How to use the container", link: "./recipes/accessibility/sftp.html"},
+                            { text: "Load and segment microCT image", link: "/recipes/accessibility/aspera.html"},
                         ],
                         link: './recipes/accessibility.html'
                     },
                     {
-                        title: 'Interoperability',
-                        icon: 'I',
+                        title: 'sc-env',
+                        icon: 'SC',
                         content: [
                             {
                                 text: "Selecting terminologies and ontologies",
@@ -373,24 +365,44 @@
                 ],
                 recipes: [
                     {
-                        title: "Infrastructure",
-                        link: "./recipes/infrastructure.html",
-                        icon: "fas fa-toolbox"
+                        title: "Access the BD Center",
+                        link: './recipes/access_bdc.html',
+                        icon: "A"
                     },
                     {
-                        title: "Assessments",
-                        link: "./recipes/assessing-fairness.html",
-                        icon: "fas fa-tasks"
+                        title: "commbini-env",
+                        link: "./recipes/commbini-env.html",
+                        icon: "C"
                     },
                     {
-                        title: "Applied Examples",
-                        link: "./recipes/applied-examples.html",
-                        icon: "fas fa-book"
+                        title: "datascience-env",
+                        link: "./recipes/admin_notes.html",
+                        icon: "D"
                     },
                     {
-                        title: "Maturity model",
-                        link: "./recipes/maturity.html",
-                        icon: "fas fa-signal"
+                        title: "fiji-env",
+                        link: "./recipes/fiji-env.html",
+                        icon: "FJ"
+                    },
+                    {
+                        title: "flowcyto-env",
+                        link: "./recipes/flowcyto-env.html",
+                        icon: "FC"
+                    },
+                    {
+                        title: "image3d-env",
+                        link: "./recipes/image3d-env.html",
+                        icon: "I3"
+                    },
+                    {
+                        title: "sc-env",
+                        link: "./recipes/sc-env.html",
+                        icon: "SC"
+                    },
+                    {
+                        title: "slicer-env",
+                        link: "./recipes/slicer-env.html",
+                        icon: "SL"
                     }
                 ],
                 query: null
@@ -606,7 +618,7 @@
                     </v-card-title>
                     <v-card-text class="primary lighten-1 grey--text d-flex flex-column flex-grow-1" style="flex-grow:1">
                         <div style="flex-grow:1">
-                          <p class="pb-0 mb-0 grey--text"> <b> EXEMPLAR RECIPES <b> </p>
+                          <p class="pb-0 mb-0 grey--text"> <b> EXEMPLAR CONTENT <b> </p>
                           <ul>
                             <li v-for="(content, y) in item.content" :key="'content_' + item.title + y">
                                 <a :href="content.link" class="white--text"> {{ content.text }} </a>
@@ -639,178 +651,6 @@
                         </v-card-actions>
                 </v-card>
              </v-col>
-        `
-    })
-
-    /** BOTTOM SCREEN **/
-
-    Vue.component('userstext', {
-        template: `
-            <v-col
-               cols="12"
-               sm="12"
-               xs="12"
-               md="12"
-               lg="12"
-               xl="6"
-               class="d-flex flex-column justify-start"
-               :class="$vuetify.breakpoint.xlOnly ? 'align-start' : 'align-center'"
-            >
-                <h2 class="white--text text-h2 pb-4" style="border-bottom:10px solid"> Users </h2>
-                <p class="px-2 text-h5" :class="$vuetify.breakpoint.xlOnly ? 'text-left' : 'text-center'">
-                    If you are a <span class="secondary--text">researcher</span> or <span class="secondary--text">data steward</span> we assist you in
-                    your FAIRification journey.
-                    <br>
-                    If you are a <span class="secondary--text">policymaker</span> or <span class="secondary--text">trainer</span>
-                    we provide you with practical examples to recommend in your guidance and use in your educational material.
-                    <br>
-                    If you are a <span class="secondary--text">data manager professional</span> also contribute recipes, share your FAIR expertise, and get credited!
-                </p>
-            </v-col>
-        `
-    })
-    Vue.component('userscards', {
-        computed: {
-            styles() {
-                let styles = ''
-                this.$vuetify.breakpoint.mdAndUp ? styles += ' height: 200px; ' : styles += ' height:150px; '
-                this.$vuetify.breakpoint.lgAndUp ? styles += ' padding: 0 255px; ' : styles += 'padding: 0 10px;'
-                return styles
-            }
-        },
-        template: `
-            <v-col
-               cols="12"
-               sm="12"
-               xs="12"
-               md="12"
-               lg="12"
-               xl="6"
-               class="d-flex flex-column justify-center align-start"
-            >
-                <v-container style="height: 100%;">
-                    <v-row justify="center" :style="$vuetify.breakpoint.mdAndUp ? 'height: 200px' : 'height:150px'">
-                        <v-card
-                            style="height:100%"
-                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
-                            rounded="circle" color="white"
-                            class="d-flex flex-column justify-center align-center text-h3 secondary--text"
-                        >
-                            <span>Use</span> <span>it</span>
-                        </v-card>
-                    </v-row>
-                    <v-row :style="styles" class="d-flex" justify="space-between">
-                        <v-card
-                            class="flex-grow-0 d-flex flex-column justify-center align-center text-h3 secondary--text"
-                            style="height:100%"
-                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
-                            rounded="circle" color="white"
-                        >
-                            <span>Join</span> <span>it</span>
-                        </v-card>
-                        <div class="flex-grow-1"></div>
-                        <v-card
-                            class="flex-grow-0 d-flex flex-column justify-center align-center text-h3 secondary--text"
-                            style="height:100%"
-                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
-                            rounded="circle" color="white"
-                        >
-                            <span>Adopt</span> <span>it</span>
-                        </v-card>
-                    </v-row>
-                </v-container>
-            </v-col>
-        `
-    })
-
-    Vue.component('contributetext', {
-        template: `
-            <v-col
-               cols="12"
-               sm="12"
-               xs="12"
-               md="12"
-               lg="12"
-               xl="6"
-               class="d-flex flex-column justify-end"
-               :class="$vuetify.breakpoint.xlOnly ? 'align-end' : 'align-center'"
-            >
-                <h2 class="text-left white--text text-h2 pb-4" style="border-bottom:10px solid"> Contributions </h2>
-                <p class="text-h5 px-2" :class="$vuetify.breakpoint.xlOnly ? 'text-right' : 'text-center'">
-                    As a community-driven <b class="secondary--text">live resource</b>, recipes are added and improved, iteratively, covering more
-                    use cases, in an open manner, moderated by an Editorial Board.
-                    Join our thriving <a class="secondary--text" href='./recipes/community.html#fcb-community'>community</a>
-                    of Life Science professionals and FAIR experts from the academic and
-                    industry sectors and <a class="secondary--text" href='./recipes/help.html'>contribute</a> to get credited via your ORCID. <br>
-                    For any question, contact us at <a class="secondary--text" href='mailto:fairplus-cookbook@elixir-europe.org'>fairplus-cookbook@elixir-europe.org</a>.
-                </p>
-            </v-col>
-        `
-    })
-    Vue.component('contributecards', {
-        computed: {
-            styles() {
-                let styles = ''
-                this.$vuetify.breakpoint.mdAndUp ? styles += ' height: 200px; ' : styles += ' height:150px; '
-                this.$vuetify.breakpoint.lgAndUp ? styles += ' padding: 0 255px; ' : styles += 'padding: 0 10px;'
-                return styles
-            },
-        },
-        template: `
-            <v-col
-               cols="12"
-               sm="12"
-               xs="12"
-               md="12"
-               lg="12"
-               xl="6"
-               class="d-flex flex-column justify-end align-end"
-            >
-                <v-container>
-                    <v-row :style="styles" class="d-flex" justify="space-between">
-                        <v-card
-                            class="flex-grow-0 d-flex justify-center align-center flex-column"
-                            :class="$vuetify.breakpoint.mdAndUp ? 'text-h5' : 'text-h6'"
-                            style="height:100%"
-                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
-                            rounded="circle" color="white"
-                        >
-                            <span class=" secondary--text" :class="$vuetify.breakpoint.mdAndUp ? 'text-h1' : 'text-h2'">
-                                71
-                            </span>
-                            <span class="primary--text">Recipes</span>
-                        </v-card>
-                        <div class="flex-grow-1"></div>
-                        <v-card
-                            style="height:100%"
-                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
-                            rounded="circle" color="white"
-                            class="d-flex justify-center align-center flex-column"
-                            :class="$vuetify.breakpoint.mdAndUp ? 'text-h5' : 'text-h6'"
-                        >
-                            <span class=" secondary--text" :class="$vuetify.breakpoint.mdAndUp ? 'text-h1' : 'text-h2'">
-                                91
-                            </span>
-                            <span class="primary--text">Authors</span>
-                        </v-card>
-                    </v-row>
-                    <v-row justify="center" :style="$vuetify.breakpoint.mdAndUp ? 'height: 200px' : 'height:150px'">
-                        <v-card
-                            class="flex-grow-0 d-flex justify-center align-center flex-column"
-                            :class="$vuetify.breakpoint.mdAndUp ? 'text-h5' : 'text-h6'"
-                            style="height:100%"
-                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
-                            rounded="circle" color="white"
-                        >
-                           <span class=" secondary--text" :class="$vuetify.breakpoint.mdAndUp ? 'text-h1' : 'text-h2'">
-                               18
-                           </span>
-
-                           <span class="primary--text">Executable</span>
-                        </v-card>
-                    </v-row>
-                </v-container>
-            </v-col>
         `
     })
 
