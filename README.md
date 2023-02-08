@@ -49,3 +49,9 @@ or
 
 - From outside the project:
 `jupyter-book build -W -n --keep-going the-fair-cookbook`
+
+## Push it to GitHub Pages
+
+After building locally, run the command:
+
+`ghp-import -n -p -f _build/html`
