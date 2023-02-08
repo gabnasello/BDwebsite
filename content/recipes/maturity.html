@@ -1,0 +1,1507 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing culture with the Dataset Maturity Model</title>
+
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+
+
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/search-wizard.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/search.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/vuetify.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/searchNodal.js"></script>
+    <script src="../../_static/js/mermaid.core.js"></script>
+    <script src="../../_static/js/vue.min.js"></script>
+    <script src="../../_static/js/mermaid.js"></script>
+    <script src="../../_static/js/mermaid.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://fairplus.github.io/the-fair-cookbook/content/recipes/maturity.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Plant genomic and genetic variation data submission to EMBL-EBI databases" href="reusability/miappe.html" />
+    <link rel="prev" title="2. FAIRshake tool" href="assessing-fairness/fair-assessment-fairshake.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.6.9/vuetify.js"
+        integrity="sha512-cgrSlRKhr/ovJePDoGIdcfZ3wiGcc0fT4Q7hAo0x3P1lyLwUmv2NgJtCo2gzFbxqFjKvNnCfVUjZ1XADm0/ZdQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://fairplus.github.io/the-fair-cookbook/content/recipes/maturity.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Changing culture with the Dataset Maturity Model" />
+<meta property="og:description" content="Changing culture with the Dataset Maturity Model  &lt;!-- ````{panels_fairplus} :identifier_text: FCB081 :identifier_link: &#39;https://w3id.org/faircookbook/FCB081&#39; :" />
+ <meta property="og:image"       content="https://fairplus.github.io/the-fair-cookbook/_static/cookbook-logo-small.png" /> 
+<meta name="twitter:card" content="summary" />
+  </head>
+<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+
+
+
+<v-app id="app" class="pa-0">
+    <v-container fluid class="pa-0">
+        <v-row class="pa-0" no-gutters>
+            <v-container fluid class="pa-0">
+                <v-row>
+                    <div class="topbar container-xl fixed-top pl-0 primary lighten-1 py-2" style="height:65px !important;">
+    <div class="topbar-contents row" style="margin: initial !important;">
+        <div class="col topbar-main d-flex align-center">
+            
+                <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                        data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                        aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                        title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            
+
+            
+                <a href="../../index.html" style="width: 300px">
+                    <img
+                        src="../../_static/cookbook-logo-small.png"
+                        class="logo"
+                        alt="The FAIR Cookbook"
+                        style="width: 100%"
+                    >
+                </a>
+            
+
+            <v-spacer> </v-spacer>
+            <div class="mr-4 extraButtons">
+                <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger d-flex justify-center align-center" style="height:100%">
+
+    <v-menu offset-y content-class="elevation-0" open-on-hover>
+        <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              id="dropdown-buttons-trigger"
+              color="white"
+              outlined
+              v-bind="attrs"
+              v-on="on"
+              flat
+              solo
+              rounded
+              :fab="$vuetify.breakpoint.mdAndDown"
+              :small="$vuetify.breakpoint.mdAndDown"
+              :class="$vuetify.breakpoint.mdAndDown ? 'pa-0' : ''"
+            >
+                <v-icon :class="$vuetify.breakpoint.lgAndUp ? 'mr-3' : 'mx-1'" left>fab fa-github</v-icon>
+                <span v-if="$vuetify.breakpoint.lgAndUp"> GitHub </span>
+            </v-btn>
+        </template>
+        <div class="homepageMenu d-flex flex-column">
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook"
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mr-3" left>fab fa-github</v-icon>
+                repository
+            </v-btn>
+            
+
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/recipes/maturity.html&body=Your%20issue%20content%20here."
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mr-3" left>fas fa-lightbulb</v-icon>
+                open issue
+            </v-btn>
+            
+
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook/edit/main/content/recipes/maturity.md"
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mx-3" left>fas fa-pencil-alt</v-icon>
+                suggest edit
+            </v-btn>
+            
+        </div>
+    </v-menu>
+</div>
+
+                <!-- Launch buttons -->
+
+            </div>
+                
+                    <script>
+    Vue.component("Searchfield", {
+      data () { return {
+        query: null
+      } },
+      methods: {
+        search() {
+            if (this.query) window.location.href = `../search-wizard.html?q=` + this.query
+            else window.location.href = `../search-wizard.html`
+        }
+      },
+      template: `
+      <div style="width:250px">
+            <v-text-field
+              v-model="query"
+              append-icon="fa-search"
+              label="Search Wizard..."
+              dense
+              rounded
+              single-line
+              solo
+              hide-details
+              class="white primary--text"
+              @click:append="search"
+              @keyup.enter="search"
+            />
+      </div>
+      `
+    })
+</script>
+
+<Searchfield> </Searchfield>
+
+
+
+
+
+
+                
+                
+                
+        </div>
+    </div>
+</div>
+                </v-row>
+                
+                    <v-row class="d-flex">
+                    
+                        <div
+                            class=" bd-sidebar site-navigation show"
+                            id="site-navigation"
+                            style="width:350px"
+                        >
+                            
+                                <div class="nav-drawer d-flex flex-column grey lighten-3" style="height:100%;padding-top: 40px;">
+
+    <div class="testTOC">
+        <script>
+    Vue.component("Navigation", {
+        data() { return { recipes: {} }},
+        methods: {
+            async getData(){
+                const recipes = await fetch('/_static/recipes.json')
+                this.recipes = await recipes.json();
+                this.parseDom()
+            },
+            parseDom() {
+                const links = Array.prototype.slice.call(document.getElementsByClassName("reference internal"))
+                const icon = '<i class="fas fa-play-circle grey lighten-3 secondary--text ml-2"></i>'
+                links.forEach(link => {
+                    const recipeSplit = link.innerText.split(". ")
+                    const recipeName = recipeSplit[recipeSplit.length - 1].trim()
+                    recipeSplit.pop()
+                    recipeSplit.forEach(pref => { pref = pref.trim() })
+                    const prefix = recipeSplit.length > 0 ? recipeSplit.join(".") + "." : null
+                    const content = prefix ? `${prefix} ${recipeName}` : recipeName
+                    if (Object.keys(this.recipes).includes(recipeName)) {
+                        if (this.recipes[recipeName].executable === 'Yes') link.innerHTML = content + icon
+                    }
+                })
+            }
+        },
+        mounted() { this.getData() }
+    })
+</script>
+
+
+<Navigation> </Navigation>
+
+    </div>
+
+    <div class="nav-tree grey px-5 lighten-3 pb-5" style="flex-grow: 1; border-bottom: 1px solid #ccc !important">
+        
+        
+            <nav class="bd-links pt-10" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  FOREWORD
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/FAIR-cookbook-audience.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/brief-FAIR-principles.html">
+   Introducing the FAIR Principles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/FAIRplus-values.html">
+   Reflecting on the ethical values of FAIR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/fairification-process.html">
+   Introducing our FAIRification framework
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/priorization.html">
+   Prioritizing projects for FAIRification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/metadata-fair.html">
+   Framing FAIR and the notion of metadata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/FAIR-and-knowledge-graphs.html">
+   Understanding the relation between FAIR and Knowledge Graphs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/training-datasets.html">
+   Training for FAIRification with open or synthetic biomedical datasets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/public-kg-resource-integration.html">
+   Raising Awareness in Public Knowledge Graphs for Life Sciences
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/fair-cro.html">
+   Reflecting on Practical Considerations for CROs to play FAIR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/dpia.html">
+   Data Protection Impact Assessment and Data Privacy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/glossary-fair-terms.html">
+   Glossary
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Recipes at a Glance
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../search-wizard.html">
+   All Recipes In a Table
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  FAIR RECIPES
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="findability.html">
+   Findability
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="findability/identifiers.html">
+     1. Introducing unique, persistent identifiers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="infrastructure/chemical-identities.html">
+     2. Creating InChI &amp; SMILES identifiers for chemical structures
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="infrastructure/iupac-names.html">
+     3. Creating InChIKeys for IUPAC names
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="findability/identifiers-minids.html">
+     4. Minting identifiers with Globus Minid client
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="findability/zenodo-deposition.html">
+     5. Depositing to generic repositories - Zenodo use case
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="findability/registeringDatasets.html">
+     6. Registering datasets with Wikidata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="findability/checksum-create.html">
+     7. Creating file checksums
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="findability/checksum-validate.html">
+     8. Validating checksums to verify file integrity
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="findability/seo.html">
+     9. Introducing Search Engine Optimization (SEO)
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="findability/seo/bioschemas-data-page.html">
+       9.9.1. Marking up Data pages with Schema.org &amp; Bioschemas for SEO
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="findability/seo/bioschemas-dataset.html">
+       9.9.2. Marking up Dataset page with Schema.org &amp; Bioschemas for SEO
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="findability/seo/bioschemas-datacatalog.html">
+       9.9.3. Marking up Data Catalogue page with Schema.org &amp; Bioschemas for SEO
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="accessibility.html">
+   Accessibility
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="accessibility/sftp.html">
+     1. Transferring data with SFTP protocol
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="accessibility/aspera.html">
+     2. Downloading data with Aspera protocol
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="interoperability.html">
+   Interoperability
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/registering-swisslipids-identifiers.html">
+     1. Registering SwissLipids identifiers in Wikidata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/identifier-mapping.html">
+     2. Interlinking data from different sources
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="interoperability/bridgedb-recipe.html">
+     3. Mapping identifiers with BridgeDb
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="interoperability/bridgedb/bridgedb-example.html">
+       3.11.1. Mapping identifiers using BridgeDb web services
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/introduction-terminologies-ontologies.html">
+     4. Introducing terminologies and ontologies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/selecting-ontologies.html">
+     5. Selecting terminologies and ontologies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/ontology-new-term-request-recipe.html">
+     6. Requesting new terms from terminologies and ontologies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/ontology-operations-tools.html">
+     7. Introducing ontology-related tools and services
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="interoperability/ontology-robot-recipe.html">
+     8. Building an application ontology with ROBOT
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="interoperability/ontology-robot-recipe/MSIO-robot-build-process.html">
+       8.11.1. Building an application ontology for metabolomics - MSIO
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="interoperability/ontology-robot-recipe/competency-questions.html">
+       8.11.2. Defining competency questions for the Ontology ROBOT use case
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/ontology-alignment-oxo.html">
+     9. Mapping Ontologies with OxO, EBI Ontology Xref Service
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/creating-data-dictionary.html">
+     10. Creating a data/variable dictionary
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="interoperability/creating-minimal-metadata-profiles.html">
+     11. Creating a metadata profile
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="interoperability/transcriptomics-metadata.html">
+       11.5.1. Outlining a metadata profile for transcriptomics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="interoperability/covid19-sample-metadata-profile-shex-use-case.html">
+       11.5.2. Building a community compliant metadata profile - The Covid19 sample profile use case
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="interoperability/bioactivity-profile.html">
+       11.5.3. Outlining a metadata profile for Bioactivity data
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/from-proprietary-to-open-standard-mzml-exemplar.html">
+     12. Converting from proprietary to open format
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/fastq-file-format-validators.html">
+     13. Validating file format - FASTQ example
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/rdf-conversion.html">
+     14. Inventorying tools for converting data to RDF
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="interoperability/ETL-tools.html">
+     15. Surveying extraction, transformation, load (ETL) tools
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="interoperability/VCF-to-FHIR-conversion.html">
+     16. Expressing Clinical Genetic Information as FHIR JSON
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="interoperability/vcf2fhir/FAIRcookbook-vcf2fhir.html">
+       16.9.1. Converting VCF file to FHIR JSON
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="interoperability/creating-knowledge-graph-from-unstructured-text.html">
+     17. Creating knowledge graphs from unstructured text
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="interoperability/nlp2kg/creating-knowledge-graph-from-text.html">
+       17.12.1. unstructured text to graph as executable notebook
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="reusability.html">
+   Reusability
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="reusability/ATI-licensing.html">
+     1. Licensing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reusability/ATI_licensing_software.html">
+     2. Licensing Software
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reusability/ATI_licensing_data.html">
+     3. Licensing Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reusability/expressing-data-use.html">
+     4. Declaring data permitted uses
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reusability/provenance.html">
+     5. Introducing Provenance Information
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="infrastructure.html">
+   Infrastructure
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="infrastructure/id-resolution.html">
+     1. Introducing identifier resolution services
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="infrastructure/gupri.html">
+     2. Creating resolvable identifiers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="infrastructure/data-catalog.html">
+     3. Building a catalogue of datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="infrastructure/dats-model.html">
+     4. Introducing the DATS model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="infrastructure/data-catalog-deployment.html">
+     5. Deploying a data catalogue - The IMI data catalogue example
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="infrastructure/vocabularies.html">
+     6. Vocabulary management
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="infrastructure/vocabularies/technical-and-architectural-selection-criteria-of-ontology-lookup-services.html">
+       6.1. Introducing vocabulary portals and lookup services
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="infrastructure/vocabularies/Selecting_and_using_ontology_lookup_services.html">
+       6.2. Selecting an ontology lookup service
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="infrastructure/vocabularies/UC3_R13_local_ontology_services.html">
+       6.3. Deploying EBI Ontology Loopkup Service
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="infrastructure/openrefine-nvt.html">
+     7. Using OpenRefine and Karma for FAIRification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="infrastructure/fair-api.html">
+     8. Developing FAIR API for the Web
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="assessing-fairness.html">
+   Assessment
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="assessing-fairness/fair-assessment-fairevaluator.html">
+     1. Assessing with FAIR Evaluator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assessing-fairness/fair-assessment-fairshake.html">
+     2. Assessing with FAIRshake
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  FAIR Maturity
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="current reference internal" href="#">
+   Changing culture with the Dataset Maturity Model
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="reusability/miappe.html">
+     Improving dataset maturity - the MIAPPE use case
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="maturity/isa-maturity-progression.html">
+     Moving through maturity levels with ISA
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="maturity/create-a-simple-ISA-descriptor.html">
+       Minimal Data Maturity with ISA - ISA-Tab and free text
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="maturity/isa-api-programmatic-rebuild-of-BII-S-3.html">
+       Enhanced Data Maturity with ISA - ISA-JSON and ontology markup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="maturity/isa-json-conversion-to-rdf-linked-data.html">
+       Moving to a semantically typed version - ISA-JSON-LD
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="maturity/isa-as-RO.html">
+       Dissemination - Packaging ISA as a Research Object (RO)
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="applied-examples/fair-data-matrix-recipe.html">
+     Making an omics data matrix FAIR
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="applied-examples/fair-data-matrix/0-rose-metabolites-Python-data-handling.html">
+       FAIRifying Data Matrices - Step1 - Starting material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="applied-examples/fair-data-matrix/1-rose-metabolites-Python-analysis.html">
+       FAIRifying Data Matrices - Step2 - Structuring data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="applied-examples/fair-data-matrix/2-rose-metabolites-Python-RDF-querying-analysis.html">
+       FAIRifying Data Matrices - Step3 - Exploring data with SPARQL
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="applied-examples/fair-data-matrix/3-rose-metabolites-R-analysis.html">
+       FAIRifying Data Matrices - Step4 - Integrating data
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="applied-examples/fair-workflows.html">
+     Making Computational Workflows FAIR
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  FAIRified Datasets
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="applied-examples.html">
+   Applied examples
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="applied-examples/etox.html">
+     1. IMI eTox - toxicity datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="applied-examples/nd4bb.html">
+     2. IMI nd4bb - chemical activities datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="applied-examples/oncotrack_raw/rawRecipe-oncotrack.html">
+     3. Readying IMI Oncotrack - clinical cohort datasets for deposition to EBI Biosamples
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="applied-examples/resolute_raw/resolute.html">
+     4. Depositing IMI ReSOLUTE transcriptomics datasets to EBI repositories
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="applied-examples/ehden-ohdsi.html">
+     5. Enhancing discoverability of EHDEN OHDSI data with Schema.org markup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="applied-examples/eubopen-hcs-bioimage.html">
+     6. Depositing IMI EUBOPEN High-Content Screening data to EBI BioImage Archive
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="applied-examples/approach-cdisc.html">
+     7. Mapping IMI APPROACH datasets to CDISC-SDTM standard
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  AFTERWORD
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="afterword/fair-reflections.html">
+   Lessons learned from the FAIR journey and project outlook
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  GLOSSARY
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction/glossary-fair-terms.html">
+   Glossary of terms and abbreviations
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  JOIN US
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="community.html">
+   Community
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="afterword/people.html">
+     Boards and contributors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="afterword/code_of_conduct.html">
+     Code of conduct
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="afterword.html">
+     Platform
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="afterword/the-turing-way.html">
+       Leveraging the Turing Way Book
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="help.html">
+   Contribute
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="afterword/contributing.html">
+     1. How to contribute
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="help/how-to-create-recipe-with-gdoc.html">
+     2. Add via GoogleDoc
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="help/how-to-create-recipe-with-hackmd.html">
+     3. Add via HackMD
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="help/how-to-create-recipe-with-git.html">
+     4. Add via Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="help/recipe-template.html">
+     5. Git recipe template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="help/tips-tricks.html">
+     6. Tips and tricks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="help/myst.html">
+     7. Markdown cheatsheet
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav>
+        
+        
+             <!-- To handle the deprecated key -->
+
+        
+    </div>
+
+    <div class="text-center px-5 lighten-3 grey py-2">
+        Powered by <a href="https://jupyterbook.org" class="secondary--text">Jupyter Book</a>
+    </div>
+</div>
+                        </div>
+                        
+                            <main class="bd-content" role="main" style="width:1%; flex-grow:1;">
+                                <v-container fluid id="main-content" class="pa-0">
+                                    <v-row class="d-flex">
+                                        
+                                            <v-col class="col-xl-10 col-lg-10 col-md-9 col-12 px-10 pt-10 mt-3">
+                                                
+  <div class="section" id="changing-culture-with-the-dataset-maturity-model">
+<span id="fcb-maturity"></span><h1>Changing culture with the Dataset Maturity Model<a class="headerlink" href="#changing-culture-with-the-dataset-maturity-model" title="Permalink to this headline">¶</a></h1>
+<!--
+````{panels_fairplus}
+:identifier_text: FCB081
+:identifier_link: 'https://w3id.org/faircookbook/FCB081'
+:difficulty_level: 3
+:recipe_type: guidance
+:reading_time_minutes: 30
+:intended_audience: principal_investigator, data_manager, data_scientist  
+:maturity_level: 0
+:maturity_indicator: 0
+:has_executable_code: nope
+:recipe_name: Changing culture with the Dataset Maturity Model
+```` 
+-->
+<div class="section" id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h2>
+<p>The present content introduces the FAIRplus “Dataset Maturity Model”, shows how to use it in the context of a
+FAIRification process to decide how far to go on a FAIR journey.
+We also show how each FAIR Cookbook recipes has been anchored to the model.
+Recipes can therefore be assembled to build a coherent path which should guarantee that datasets handled according
+to the recommendations can meet data management expectations in terms of FAIRness.
+Therefore, the FAIRplus DSM provides a handy tool for data managers to advise on changing the culture of data management
+but also manage expectations (and costs) when devising a FAIRification program for specific domains and digital objects
+living in that space.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Maturity models are not new. There are in fact training programs specifically designed for this such as the
+<strong>Capability Maturity Model Integration (CMMI)</strong> <a class="footnote-reference brackets" href="#cmmi" id="id1">1</a>.
+These models originate from engineering and manufacturing fields, in particular the military and aerospace industries,
+as means to rate the reliability and degree of development of a particular technology, skill or process,
+in other words, a capability.
+Notions such as <strong>Technical Readiness Levels</strong>  or TRLs define a scale of 9 levels to rate
+a process from basic idea to production grade technology.</p>
+<p>With the digitization of society and the pervasiveness of digital technology, the life sciences, as other fields, are
+wrestling with the challenges of data management as defined in  the <em>Fourth paradigm: Data-intensive Scientific Discovery</em>
+<a class="footnote-reference brackets" href="#hey2009" id="id2">3</a>.
+Organizations need to decide how to allocate resources to increase the impact of digital artefacts as they are created.
+Large amounts of literature exist detailing the key ideas for handling data. A resource such as the <em>DAMA book</em> covers in
+great depths the fundamental operations and challenges associated with data management activities <a class="footnote-reference brackets" href="#dama-dmbook" id="id3">4</a>.</p>
+<p>More recently, The FAIR principles articulated key requirements and properties data should have <a class="footnote-reference brackets" href="#pmid26978244" id="id4">7</a>.
+Following this important work, a number of initiatives have worked at producing domain specific maturity indicators.
+Among these initiatives, the Research Data Alliance Maturity Indicators seem to have gain notoriety
+<a class="footnote-reference brackets" href="#rdaindicators" id="id5">2</a>.</p>
+<p>Building on these efforts, the FAIRplus project has developed a more targeted approach by focusing on the notion of
+dataset.</p>
+</div>
+<div class="section" id="presentation-of-the-fairplus-dataset-maturity-model-dsm">
+<h2>Presentation of the FAIRplus Dataset Maturity Model (DSM)<a class="headerlink" href="#presentation-of-the-fairplus-dataset-maturity-model-dsm" title="Permalink to this headline">¶</a></h2>
+<p>The FAIRplus Dataset Maturity Model proposes a framework to incorporate key concepts defined by the Capability and
+Maturity Models and apply them to define maturity levels which can used to describe a dataset.</p>
+<p>For a comprehensive overview of the FAIRplus Dataset Maturity Model, refer to the <a class="reference external" href="https://fairplus.github.io/Data-Maturity/">dedicated site</a>,
+a screenshot of which is presented below.</p>
+<details class="sphinx-bs dropdown card mb-3" open="open">
+<summary class="summary-title card-header">
+<strong>FAIR DSM</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="figure align-default" id="fair-dataset-maturity-model">
+<a class="reference internal image-reference" href="../../_images/maturity_img_1.png"><img alt="FAIR Dataset Maturity Model" src="../../_images/maturity_img_1.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">FAIR Dataset Maturity Model</span><a class="headerlink" href="#fair-dataset-maturity-model" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</details></div>
+<div class="section" id="integrating-the-fairplus-dataset-maturity-model-in-the-fairplus-cookbook">
+<h2>Integrating the FAIRplus Dataset Maturity Model in the FAIRplus Cookbook<a class="headerlink" href="#integrating-the-fairplus-dataset-maturity-model-in-the-fairplus-cookbook" title="Permalink to this headline">¶</a></h2>
+<p>Each recipe in the FAIRplus Cookbook now incorporates one or more FAIRplus DSM indicators.</p>
+<p>These can be found in the <strong>Recipe Card</strong>.</p>
+<p>They are there to provide our readership with a pointer to the level of data set maturity they can expect to meet if
+they apply and implement the recipe.</p>
+<p>The FAIR DSM indicators are also used to browse the recipes through the lense of maturity improvements level, which is
+of interest.</p>
+<p>Finally, the FAIR Cookbook produced specific content available as jupyter notebooks which use the familiar Investigation Study Assay model <a class="footnote-reference brackets" href="#pmid20679334" id="id6">5</a>
+and Research Objects <a class="footnote-reference brackets" href="#sefton-peter-2022-5841615" id="id7">6</a> to showcase how users can move through maturity levels and decide for themselves how far they need to go along the scale.</p>
+<details class="sphinx-bs dropdown card mb-3" open="open">
+<summary class="summary-title card-header">
+<strong>FAIR DSM</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="figure align-default" id="fair-dsm-indicators-in-the-fair-cookbook-recipe-card">
+<a class="reference internal image-reference" href="../../_images/maturity_img.png"><img alt="FAIR DSM indicators in the FAIR Cookbook Recipe card" src="../../_images/maturity_img.png" style="width: 450px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">FAIR DSM indicators in the FAIR Cookbook Recipe card</span><a class="headerlink" href="#fair-dsm-indicators-in-the-fair-cookbook-recipe-card" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</details></div>
+<div class="section" id="assessing-fairplus-intervention">
+<h2>Assessing FAIRplus intervention<a class="headerlink" href="#assessing-fairplus-intervention" title="Permalink to this headline">¶</a></h2>
+<p>The FAIRplus DSM has subsequently been used to assess the effectiveness of interventions on datasets presented
+to FAIRplus experts.</p>
+<p>Each of the 20 projects, which have interacted with FAIRplus, have been subjected to a standard protocol looking at
+FAIR maturity before and after intervention, when performing retrospective processing of the data.
+In few instances, the effect of prospective interventions could also be measured.</p>
+<p>FAIRplus DSM developed a dedicated manual assessment template.</p>
+<div class="section" id="training-the-assessor">
+<h3>Training the assessor<a class="headerlink" href="#training-the-assessor" title="Permalink to this headline">¶</a></h3>
+<p>As with any tool, familiarization and training are necessary to ensure that the personnel carrying out the evaluations
+can use the framework in a consistent fashion.</p>
+</div>
+<div class="section" id="performing-the-assessment">
+<h3>Performing the assessment<a class="headerlink" href="#performing-the-assessment" title="Permalink to this headline">¶</a></h3>
+<p>The FAIRplus DSM group therefore recruited FAIR experts and over the
+course of a dedicated workshop presented the DSM model, proposed exercises and then asked participants to rate several
+datasets independently.</p>
+<p>The next step consisted in evaluating the inter-rater agreement when using the framework.</p>
+<p>A debriefing of the rating was carried out and was the ideal opportunity to clarify any misunderstandings about the
+indicator definitions and therefore reconcile rating discrepancies between the participant.
+Difference in interpretations
+were identified leading in a refinement of the definitions and improvement of the documentation of the
+FAIRplus dataset maturity model.
+It also resulted in streamlining both the training program and the evaluation program.</p>
+<p>The following figure shows the effect of a FAIRification process on an IMI eTOX dataset.</p>
+<details class="sphinx-bs dropdown card mb-3" open="open">
+<summary class="summary-title card-header">
+<strong>FAIR DSM image 1</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="figure align-default" id="fair-dsm-indicators-before-and-after-intervention-content">
+<a class="reference internal image-reference" href="../../_images/DSMeval-img1.png"><img alt="FAIR DSM indicators before and after intervention-Content" src="../../_images/DSMeval-img1.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">FAIR DSM indicators before and after intervention-Content</span><a class="headerlink" href="#fair-dsm-indicators-before-and-after-intervention-content" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</details><hr class="docutils" />
+<details class="sphinx-bs dropdown card mb-3" open="open">
+<summary class="summary-title card-header">
+<strong>FAIR DSM image 2</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="figure align-default" id="fair-dsm-indicators-before-and-after-intervention-format">
+<a class="reference internal image-reference" href="../../_images/DSMeval-img2.png"><img alt="FAIR DSM indicators before and after intervention-Format" src="../../_images/DSMeval-img2.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">FAIR DSM indicators before and after intervention-Format</span><a class="headerlink" href="#fair-dsm-indicators-before-and-after-intervention-format" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</details><hr class="docutils" />
+<details class="sphinx-bs dropdown card mb-3" open="open">
+<summary class="summary-title card-header">
+<strong>FAIR DSM image 3</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="figure align-default" id="fair-dsm-indicators-before-and-after-intervention-access">
+<a class="reference internal image-reference" href="../../_images/DSMeval-img3.png"><img alt="FAIR DSM indicators before and after intervention-Access" src="../../_images/DSMeval-img3.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">FAIR DSM indicators before and after intervention-Access</span><a class="headerlink" href="#fair-dsm-indicators-before-and-after-intervention-access" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</details></div>
+</div>
+<div class="section" id="conclusions-it-is-about-changing-the-data-management-culture">
+<h2>Conclusions: It is about changing the data management culture!<a class="headerlink" href="#conclusions-it-is-about-changing-the-data-management-culture" title="Permalink to this headline">¶</a></h2>
+<p>The FAIRplus Dataset Maturity Model (DSM) developed by the consortium is proving a valuable tool for Data Managers,
+Decision Makers and Data Scientist to identify the weak points in their FAIRification strategies or more simply to define
+the level of maturity they are capable of delivery within the constraints of the project or research program.
+The FAIRplus DSM, following a minimal familiarization and training period, provides the means to effective quantity and
+articulate on FAIRification strategies and choke points. Therefore, by enabling a clearer way for communicating and talking
+about FAIRification process, the FAIRplus DSM constitutes an excellent tool to plan and enable changes in the way datasets
+can be managed</p>
+<div class="section" id="what-to-read-next">
+<h3>What to read next?<a class="headerlink" href="#what-to-read-next" title="Permalink to this headline">¶</a></h3>
+<p>Moving through maturity levels with ISA by running the following notebooks in the indicated order:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://w3id.org/faircookbook/FCB062">improving dataset maturity: the MIAPPE use case</a></p></li>
+<li><p><a class="reference external" href="https://w3id.org/faircookbook/FCB063">create-a-simple-isa-descriptor</a></p></li>
+<li><p><a class="reference external" href="https://w3id.org/faircookbook/FCB064">isa-api-programmatic-rebuild-of-BII-S-3</a></p></li>
+<li><p><a class="reference external" href="https://w3id.org/faircookbook/FCB064">isa-json-conversion-to-rdf-linked-data</a></p></li>
+<li><p><a class="reference external" href="https://w3id.org/faircookbook/FCB066">isa-as-ro</a></p></li>
+</ul>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-md-4 docutils">
+<div class="card w-100 border-2 docutils">
+<div class="card-header bg-primary pa_dark docutils">
+<a class="reference internal image-reference" href="../../_images/pistoia_logo.png" id="fairtoolkit-logo"><img alt="../../_images/pistoia_logo.png" class="align-center" id="fairtoolkit-logo" src="../../_images/pistoia_logo.png" style="height: 40px;" /></a>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><a class="reference external" href="https://fairtoolkit.pistoiaalliance.org/methods/data-capability-maturity-model/">The Pistoia Alliance FAIRtoolkit Data Capability Maturity Model</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>References</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text" id="bibtex-footbibliography-content/recipes/maturity-0"><dl class="footnote brackets">
+<dt class="label" id="cmmi"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p class="card-text">Capability maturity model integration. URL: <a class="reference external" href="https://cmmiinstitute.com/cmmi">https://cmmiinstitute.com/cmmi</a>.</p>
+</dd>
+<dt class="label" id="rdaindicators"><span class="brackets"><a class="fn-backref" href="#id5">2</a></span></dt>
+<dd><p class="card-text">FAIR Data Maturity Model Working Group. FAIR Data Maturity Model. Specification and Guidelines. June 2020. URL: <a class="reference external" href="https://doi.org/10.15497/rda00050">https://doi.org/10.15497/rda00050</a>, <a class="reference external" href="https://doi.org/10.15497/rda00050">doi:10.15497/rda00050</a>.</p>
+</dd>
+<dt class="label" id="hey2009"><span class="brackets"><a class="fn-backref" href="#id2">3</a></span></dt>
+<dd><p class="card-text">Tony Hey, Stewart Tansley, and Kristin Tolle, editors. <em>The Fourth Paradigm: Data-Intensive Scientific Discovery</em>. Microsoft Research, Redmond, Washington, 2009. URL: <a class="reference external" href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">http://research.microsoft.com/en-us/collaboration/fourthparadigm/</a>.</p>
+</dd>
+<dt class="label" id="dama-dmbook"><span class="brackets"><a class="fn-backref" href="#id3">4</a></span></dt>
+<dd><p class="card-text">Dama International. <em>DAMA-DMBOK: Data Management Body of Knowledge (2nd Edition)</em>. Technics Publications, LLC, Denville, NJ, USA, 2017. ISBN 1634622340. <a class="reference external" href="https://doi.org/10.5555/3165209">doi:10.5555/3165209</a>.</p>
+</dd>
+<dt class="label" id="pmid20679334"><span class="brackets"><a class="fn-backref" href="#id6">5</a></span></dt>
+<dd><p class="card-text">P. Rocca-Serra, M. Brandizi, E. Maguire, N. Sklyar, C. Taylor, K. Begley, D. Field, S. Harris, W. Hide, O. Hofmann, S. Neumann, P. Sterk, W. Tong, and S. A. Sansone. ISA software suite: supporting standards-compliant experimental annotation and enabling curation at the community level. <em>Bioinformatics</em>, 26(18):2354–2356, Sep 2010.</p>
+</dd>
+<dt class="label" id="sefton-peter-2022-5841615"><span class="brackets"><a class="fn-backref" href="#id7">6</a></span></dt>
+<dd><p class="card-text">Peter Sefton, Eoghan Ó Carragáin, Stian Soiland-Reyes, Oscar Corcho, Daniel Garijo, Raul Palma, Frederik Coppens, Carole Goble, José M. Fernández, Kyle Chard, Jose Manuel Gomez-Perez, Michael R. Crusoe, Ignacio Eguinoa, Nick Juty, Kristi Holmes, Jason A. Clark, Salvador Capella-Gutierrez, Alasdair J. G. Gray, Stuart Owen, Alan R. Williams, Giacomo Tartari, Finn Bacall, Thomas Thelen, Hervé Ménager, Laura Rodríguez-Navas, Paul Walk, brandon whitehead, Mark Wilkinson, Paul Groth, Erich Bremer, Leyla Jael Castro, Karl Sebby, Alexander Kanitz, Ana Trisovic, Gavin Kennedy, Mark Graves, Jasper Koehorst, Simone Leo, Marc Portier, Paul Brack, Milan Ojsteršek, Bert Droesbeke, Chenxu Niu, Kosuke Tanabe, Tomasz Miksa, Marco La Rosa, Cedric Decruw, Andreas Czerniak, Jeremy Jay, Sergio Serra, Ronald Siebes, Shaun de Witt, Shady El Damaty, Douglas Lowe, Xuanqi Li, Sveinung Gundersen, and Muhammad Radifar. <em>RO-Crate Metadata Specification 1.1.2</em>. January 2022. Recommendation published by researchobject.org - see https://w3id.org/ro/crate/1.1 for web version. URL: <a class="reference external" href="https://doi.org/10.5281/zenodo.5841615">https://doi.org/10.5281/zenodo.5841615</a>, <a class="reference external" href="https://doi.org/10.5281/zenodo.5841615">doi:10.5281/zenodo.5841615</a>.</p>
+</dd>
+<dt class="label" id="pmid26978244"><span class="brackets"><a class="fn-backref" href="#id4">7</a></span></dt>
+<dd><p class="card-text">M. D. Wilkinson, M. Dumontier, I. J. Aalbersberg, G. Appleton, M. Axton, A. Baak, N. Blomberg, J. W. Boiten, L. B. da Silva Santos, P. E. Bourne, J. Bouwman, A. J. Brookes, T. Clark, M. Crosas, I. Dillo, O. Dumon, S. Edmunds, C. T. Evelo, R. Finkers, A. Gonzalez-Beltran, A. J. Gray, P. Groth, C. Goble, J. S. Grethe, J. Heringa, P. A. ‘t Hoen, R. Hooft, T. Kuhn, R. Kok, J. Kok, S. J. Lusher, M. E. Martone, A. Mons, A. L. Packer, B. Persson, P. Rocca-Serra, M. Roos, R. van Schaik, S. A. Sansone, E. Schultes, T. Sengstag, T. Slater, G. Strawn, M. A. Swertz, M. Thompson, J. van der Lei, E. van Mulligen, J. Velterop, A. Waagmeester, P. Wittenburg, K. Wolstencroft, J. Zhao, and B. Mons. The FAIR Guiding Principles for scientific data management and stewardship. <em>Sci Data</em>, 3:160018, Mar 2016.</p>
+</dd>
+</dl>
+</p>
+</div>
+</details></div>
+<div class="section" id="authors">
+<h2>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Authors</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="card-text">Name</p></th>
+<th class="head"><p class="card-text">ORCID</p></th>
+<th class="head"><p class="card-text">Affiliation</p></th>
+<th class="head"><p class="card-text">Type</p></th>
+<th class="head"><p class="card-text">ELIXIR Node</p></th>
+<th class="head"><p class="card-text">Contribution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="card-text"><div class="firstCol"><a target="_blank" href="https://github.com/{github_handle}"><img class="avatar-style" src="https://avatars.githubusercontent.com/iemam"></img><div class="d-block">Ibrahim Emam</div></a></div></p></td>
+<td><p class="card-text"><a target="_blank" href="https://orcid.org/0000-0002-7561-2787"><i class="fab fa-orcid fa-2x text--orange"></i></a></p></td>
+<td><p class="card-text">Imperial College London</p></td>
+<td><p class="card-text"><i class="fas fa-graduation-cap fa-1x text--orange" alt="Academic"></i></p></td>
+<td><p class="card-text"><img class="elixir-style" src="../../../_static/images/logo/Elixir/ELIXIR-UK.svg" ></img></p></td>
+<td><p class="card-text">Writing &amp; Editing</p></td>
+</tr>
+<tr class="row-odd"><td><p class="card-text"><div class="firstCol"><a target="_blank" href="https://github.com/{github_handle}"><img class="avatar-style" src="https://avatars.githubusercontent.com/proccaserra"></img><div class="d-block">Philippe Rocca-Serra</div></a></div></p></td>
+<td><p class="card-text"><a target="_blank" href="https://orcid.org/0000-0001-9853-5668"><i class="fab fa-orcid fa-2x text--orange"></i></a></p></td>
+<td><p class="card-text">University of Oxford</p></td>
+<td><p class="card-text"><i class="fas fa-graduation-cap fa-1x text--orange" alt="Academic"></i></p></td>
+<td><p class="card-text"><img class="elixir-style" src="../../../_static/images/logo/Elixir/ELIXIR-UK.svg" ></img></p></td>
+<td><p class="card-text">Writing &amp; Editing - Initial Draft</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="section" id="licence">
+<h2>Licence<a class="headerlink" href="#licence" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>License</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<a href="https://creativecommons.org/licenses/by/4.0/">
+    <img src="../../../_static/images/logo/cc.svg"  height="25"/>
+    <img src="../../../_static/images/logo/by.svg"  height="25"/></a>
+    <a href="https://creativecommons.org/licenses/by/4.0/"> The Creative Commons 4.0 BY license</a></br>
+    <br/>
+</div>
+</details><div class="toctree-wrapper compound">
+</div>
+<hr class="footnotes docutils" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/recipes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                                            </v-col>
+                                            <div class="d-none d-md-block col-md-2 bd-toc show collapse custom-bdtoc pt-5">
+                                                <div style="position: fixed">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abstract">
+   Abstract
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#presentation-of-the-fairplus-dataset-maturity-model-dsm">
+   Presentation of the FAIRplus Dataset Maturity Model (DSM)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integrating-the-fairplus-dataset-maturity-model-in-the-fairplus-cookbook">
+   Integrating the FAIRplus Dataset Maturity Model in the FAIRplus Cookbook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assessing-fairplus-intervention">
+   Assessing FAIRplus intervention
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#training-the-assessor">
+     Training the assessor
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#performing-the-assessment">
+     Performing the assessment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusions-it-is-about-changing-the-data-management-culture">
+   Conclusions: It is about changing the data management culture!
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-to-read-next">
+     What to read next?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reference">
+   Reference
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#authors">
+   Authors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#licence">
+   Licence
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        </div>
+                                            </div>
+                                        
+                                    </v-row>
+
+                                    
+                                        <v-row class="mb-5">
+                                            <div class='pl-10 prev-next-bottom mr-10' style="width:82%">
+                                                
+<a class='left-prev' id="prev-link" href="assessing-fairness/fair-assessment-fairshake.html" title="previous page"><span class="section-number">2. </span>FAIRshake tool</a>
+<a class='right-next' id="next-link" href="reusability/miappe.html" title="next page">Plant genomic and genetic variation data submission to EMBL-EBI databases</a>
+
+                                            </div>
+                                        </v-row>
+                                    
+                                </v-container>
+                            </main>
+                        
+                    
+                </v-row>
+                
+            </v-container>
+        </v-row>
+    </v-container>
+</v-app>
+
+
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+
+<!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-171697285-1', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+<v-container fluid>
+    <v-row no-gutter>
+        <v-col cols="12"><footer class="footer" style=" margin-top: 12px;  ">
+    <div class="container-md mt-4">
+      <div class="row" style="display:flex; justify-content: center">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
+            <div class="footerImages">
+              <a href="https://europa.eu/"><img src="/_static/images/logo/eu-flag.png" height="40" alt="EU flag"></a>
+              <a href="https://www.imi.europa.eu/"><img src="/_static/images/logo/imi-logo.png" height="40" alt="IMI logo"></a>
+              <a href="https://efpia.eu"><img src="/_static/images/logo/efpia-logo.png" height="40" alt="EFPIA logo"></a>
+            </div>
+            <div class="mb-3"> Grant agreement 802750 </div>
+          </div>
+          <div class="col-5 col-sm-2 col-xs-5 col-md-2 col-lg-2 col-xl-2">
+              <ul>
+                <li><a href="mailto:fairplus-cookbook@elixir-europe.org"> Contact us </a></li>
+                <li><a href="https://fairplus-project.eu" target="_blank"> FAIRplus </a> </li>
+              </ul>
+          </div>
+          <div class="col-5 col-sm-2 col-xs-5 col-md-2 col-lg-2 col-xl-2">
+              <ul>
+                <li> <a href="https://faircookbook.elixir-europe.org/content/recipes/afterword/people.html  "> Contributors </a> </li> </li>
+                <li> <a href="https://faircookbook.elixir-europe.org/content/recipes/help.html"> How to contribute </a> </li>
+              </ul>
+          </div>
+          <div class="col-12 col-sm-4 col-xs-12 col-md-3 col-lg-3 col-xl-3 pb-5">
+            <a class="mr-3" href="https://elixir-europe.org/" target="_blank"><img src="/_static/images/logo/Elixir/ELIXIR.png" height="50" alt="Elixir logo"></a>
+            <a href="https://fairplus-project.eu/"><img src="https://fairplus-project.eu/images/fairplus-logo.png" alt="FAIRplus logo" style="background:white;padding:5px;height:33px;"></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="padding:0">
+        <div class="row" style="padding:0; margin:0">
+            <div class="col-12 purple-dark">
+                The FAIR Cookbook is licensed under the
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                    Creative Commons Attribution 4.0 International
+                </a> (CC BY 4.0) license.
+            </div>
+        </div>
+        <div class="row extra_footer d-none">
+            <script> mermaid.init() </script>
+        </div>
+    </div>
+
+</footer> </v-col>
+    </v-row>
+</v-container>
+<script type="application/javascript">
+    const vuetify = new Vuetify({
+        theme: {
+            themes: {
+                light: {
+                    primary: '#421C6E',
+                    secondary: '#FC7A4A',
+                    accent: '#8038D1',
+                    error: '#FF5252',
+                    info: '#2196F3',
+                    success: '#7E0038',
+                    warning: '#FFC107'
+                }
+            }
+        },
+        icons: { iconfont: 'fa4' }
+    })
+    const my_vue = new Vue({ el: '#app', vuetify: vuetify })
+
+</script>
+  </body>
+</html>

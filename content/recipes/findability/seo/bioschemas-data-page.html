@@ -1,0 +1,1598 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.9.1. Marking up Data pages with Schema.org &amp; Bioschemas for SEO</title>
+
+  <link rel="stylesheet" href="../../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+
+
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/search-wizard.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/search.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/vuetify.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+
+  <link rel="preload" as="script" href="../../../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <script src="../../../../_static/js/searchNodal.js"></script>
+    <script src="../../../../_static/js/mermaid.core.js"></script>
+    <script src="../../../../_static/js/vue.min.js"></script>
+    <script src="../../../../_static/js/mermaid.js"></script>
+    <script src="../../../../_static/js/mermaid.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://fairplus.github.io/the-fair-cookbook/content/recipes/findability/seo/bioschemas-data-page.html" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="9.9.2. Marking up Dataset page with Schema.org &amp; Bioschemas for SEO" href="bioschemas-dataset.html" />
+    <link rel="prev" title="9. Search Engine Optimization (SEO)" href="../seo.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.6.9/vuetify.js"
+        integrity="sha512-cgrSlRKhr/ovJePDoGIdcfZ3wiGcc0fT4Q7hAo0x3P1lyLwUmv2NgJtCo2gzFbxqFjKvNnCfVUjZ1XADm0/ZdQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://fairplus.github.io/the-fair-cookbook/content/recipes/findability/seo/bioschemas-data-page.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Marking up Data pages with Schema.org &amp; Bioschemas for SEO" />
+<meta property="og:description" content="Marking up Data pages with Schema.org &amp; Bioschemas for SEO  &lt;script type=&#34;application/ld+json&#34;&gt; {&#34;@context&#34;: {&#34;bs&#34;: &#34;https://bioschema.org/&#34;, &#34;dc&#34;: &#34;http://purl" />
+ <meta property="og:image"       content="https://fairplus.github.io/the-fair-cookbook/_static/cookbook-logo-small.png" /> 
+<meta name="twitter:card" content="summary" />
+  </head>
+<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+
+
+
+<v-app id="app" class="pa-0">
+    <v-container fluid class="pa-0">
+        <v-row class="pa-0" no-gutters>
+            <v-container fluid class="pa-0">
+                <v-row>
+                    <div class="topbar container-xl fixed-top pl-0 primary lighten-1 py-2" style="height:65px !important;">
+    <div class="topbar-contents row" style="margin: initial !important;">
+        <div class="col topbar-main d-flex align-center">
+            
+                <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                        data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                        aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                        title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            
+
+            
+                <a href="../../../../index.html" style="width: 300px">
+                    <img
+                        src="../../../../_static/cookbook-logo-small.png"
+                        class="logo"
+                        alt="The FAIR Cookbook"
+                        style="width: 100%"
+                    >
+                </a>
+            
+
+            <v-spacer> </v-spacer>
+            <div class="mr-4 extraButtons">
+                <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger d-flex justify-center align-center" style="height:100%">
+
+    <v-menu offset-y content-class="elevation-0" open-on-hover>
+        <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              id="dropdown-buttons-trigger"
+              color="white"
+              outlined
+              v-bind="attrs"
+              v-on="on"
+              flat
+              solo
+              rounded
+              :fab="$vuetify.breakpoint.mdAndDown"
+              :small="$vuetify.breakpoint.mdAndDown"
+              :class="$vuetify.breakpoint.mdAndDown ? 'pa-0' : ''"
+            >
+                <v-icon :class="$vuetify.breakpoint.lgAndUp ? 'mr-3' : 'mx-1'" left>fab fa-github</v-icon>
+                <span v-if="$vuetify.breakpoint.lgAndUp"> GitHub </span>
+            </v-btn>
+        </template>
+        <div class="homepageMenu d-flex flex-column">
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook"
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mr-3" left>fab fa-github</v-icon>
+                repository
+            </v-btn>
+            
+
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/recipes/findability/seo/bioschemas-data-page.html&body=Your%20issue%20content%20here."
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mr-3" left>fas fa-lightbulb</v-icon>
+                open issue
+            </v-btn>
+            
+
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook/edit/main/content/recipes/findability/seo/bioschemas-data-page.md"
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mx-3" left>fas fa-pencil-alt</v-icon>
+                suggest edit
+            </v-btn>
+            
+        </div>
+    </v-menu>
+</div>
+
+                <!-- Launch buttons -->
+
+            </div>
+                
+                    <script>
+    Vue.component("Searchfield", {
+      data () { return {
+        query: null
+      } },
+      methods: {
+        search() {
+            if (this.query) window.location.href = `../../../search-wizard.html?q=` + this.query
+            else window.location.href = `../../../search-wizard.html`
+        }
+      },
+      template: `
+      <div style="width:250px">
+            <v-text-field
+              v-model="query"
+              append-icon="fa-search"
+              label="Search Wizard..."
+              dense
+              rounded
+              single-line
+              solo
+              hide-details
+              class="white primary--text"
+              @click:append="search"
+              @keyup.enter="search"
+            />
+      </div>
+      `
+    })
+</script>
+
+<Searchfield> </Searchfield>
+
+
+
+
+
+
+                
+                
+                
+        </div>
+    </div>
+</div>
+                </v-row>
+                
+                    <v-row class="d-flex">
+                    
+                        <div
+                            class=" bd-sidebar site-navigation show"
+                            id="site-navigation"
+                            style="width:350px"
+                        >
+                            
+                                <div class="nav-drawer d-flex flex-column grey lighten-3" style="height:100%;padding-top: 40px;">
+
+    <div class="testTOC">
+        <script>
+    Vue.component("Navigation", {
+        data() { return { recipes: {} }},
+        methods: {
+            async getData(){
+                const recipes = await fetch('/_static/recipes.json')
+                this.recipes = await recipes.json();
+                this.parseDom()
+            },
+            parseDom() {
+                const links = Array.prototype.slice.call(document.getElementsByClassName("reference internal"))
+                const icon = '<i class="fas fa-play-circle grey lighten-3 secondary--text ml-2"></i>'
+                links.forEach(link => {
+                    const recipeSplit = link.innerText.split(". ")
+                    const recipeName = recipeSplit[recipeSplit.length - 1].trim()
+                    recipeSplit.pop()
+                    recipeSplit.forEach(pref => { pref = pref.trim() })
+                    const prefix = recipeSplit.length > 0 ? recipeSplit.join(".") + "." : null
+                    const content = prefix ? `${prefix} ${recipeName}` : recipeName
+                    if (Object.keys(this.recipes).includes(recipeName)) {
+                        if (this.recipes[recipeName].executable === 'Yes') link.innerHTML = content + icon
+                    }
+                })
+            }
+        },
+        mounted() { this.getData() }
+    })
+</script>
+
+
+<Navigation> </Navigation>
+
+    </div>
+
+    <div class="nav-tree grey px-5 lighten-3 pb-5" style="flex-grow: 1; border-bottom: 1px solid #ccc !important">
+        
+        
+            <nav class="bd-links pt-10" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  FOREWORD
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/FAIR-cookbook-audience.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/brief-FAIR-principles.html">
+   Introducing the FAIR Principles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/FAIRplus-values.html">
+   Reflecting on the ethical values of FAIR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/fairification-process.html">
+   Introducing our FAIRification framework
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/priorization.html">
+   Prioritizing projects for FAIRification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/metadata-fair.html">
+   Framing FAIR and the notion of metadata
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/FAIR-and-knowledge-graphs.html">
+   Understanding the relation between FAIR and Knowledge Graphs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/training-datasets.html">
+   Training for FAIRification with open or synthetic biomedical datasets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/public-kg-resource-integration.html">
+   Raising Awareness in Public Knowledge Graphs for Life Sciences
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/fair-cro.html">
+   Reflecting on Practical Considerations for CROs to play FAIR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/dpia.html">
+   Data Protection Impact Assessment and Data Privacy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/glossary-fair-terms.html">
+   Glossary
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Recipes at a Glance
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../search-wizard.html">
+   All Recipes In a Table
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  FAIR RECIPES
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../../findability.html">
+   Findability
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../identifiers.html">
+     1. Introducing unique, persistent identifiers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../infrastructure/chemical-identities.html">
+     2. Creating InChI &amp; SMILES identifiers for chemical structures
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../infrastructure/iupac-names.html">
+     3. Creating InChIKeys for IUPAC names
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../identifiers-minids.html">
+     4. Minting identifiers with Globus Minid client
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../zenodo-deposition.html">
+     5. Depositing to generic repositories - Zenodo use case
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registeringDatasets.html">
+     6. Registering datasets with Wikidata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../checksum-create.html">
+     7. Creating file checksums
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../checksum-validate.html">
+     8. Validating checksums to verify file integrity
+    </a>
+   </li>
+   <li class="toctree-l2 current active collapsible-parent">
+    <a class="reference internal" href="../seo.html">
+     9. Introducing Search Engine Optimization (SEO)
+    </a>
+    <ul class="current collapse-ul">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       9.9.1. Marking up Data pages with Schema.org &amp; Bioschemas for SEO
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bioschemas-dataset.html">
+       9.9.2. Marking up Dataset page with Schema.org &amp; Bioschemas for SEO
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bioschemas-datacatalog.html">
+       9.9.3. Marking up Data Catalogue page with Schema.org &amp; Bioschemas for SEO
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../accessibility.html">
+   Accessibility
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../accessibility/sftp.html">
+     1. Transferring data with SFTP protocol
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../accessibility/aspera.html">
+     2. Downloading data with Aspera protocol
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../interoperability.html">
+   Interoperability
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/registering-swisslipids-identifiers.html">
+     1. Registering SwissLipids identifiers in Wikidata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/identifier-mapping.html">
+     2. Interlinking data from different sources
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../interoperability/bridgedb-recipe.html">
+     3. Mapping identifiers with BridgeDb
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../interoperability/bridgedb/bridgedb-example.html">
+       3.11.1. Mapping identifiers using BridgeDb web services
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/introduction-terminologies-ontologies.html">
+     4. Introducing terminologies and ontologies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/selecting-ontologies.html">
+     5. Selecting terminologies and ontologies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/ontology-new-term-request-recipe.html">
+     6. Requesting new terms from terminologies and ontologies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/ontology-operations-tools.html">
+     7. Introducing ontology-related tools and services
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../interoperability/ontology-robot-recipe.html">
+     8. Building an application ontology with ROBOT
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../interoperability/ontology-robot-recipe/MSIO-robot-build-process.html">
+       8.11.1. Building an application ontology for metabolomics - MSIO
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../interoperability/ontology-robot-recipe/competency-questions.html">
+       8.11.2. Defining competency questions for the Ontology ROBOT use case
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/ontology-alignment-oxo.html">
+     9. Mapping Ontologies with OxO, EBI Ontology Xref Service
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/creating-data-dictionary.html">
+     10. Creating a data/variable dictionary
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../interoperability/creating-minimal-metadata-profiles.html">
+     11. Creating a metadata profile
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../interoperability/transcriptomics-metadata.html">
+       11.5.1. Outlining a metadata profile for transcriptomics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../interoperability/covid19-sample-metadata-profile-shex-use-case.html">
+       11.5.2. Building a community compliant metadata profile - The Covid19 sample profile use case
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../interoperability/bioactivity-profile.html">
+       11.5.3. Outlining a metadata profile for Bioactivity data
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/from-proprietary-to-open-standard-mzml-exemplar.html">
+     12. Converting from proprietary to open format
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/fastq-file-format-validators.html">
+     13. Validating file format - FASTQ example
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/rdf-conversion.html">
+     14. Inventorying tools for converting data to RDF
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../interoperability/ETL-tools.html">
+     15. Surveying extraction, transformation, load (ETL) tools
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../interoperability/VCF-to-FHIR-conversion.html">
+     16. Expressing Clinical Genetic Information as FHIR JSON
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../interoperability/vcf2fhir/FAIRcookbook-vcf2fhir.html">
+       16.9.1. Converting VCF file to FHIR JSON
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../interoperability/creating-knowledge-graph-from-unstructured-text.html">
+     17. Creating knowledge graphs from unstructured text
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../interoperability/nlp2kg/creating-knowledge-graph-from-text.html">
+       17.12.1. unstructured text to graph as executable notebook
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../reusability.html">
+   Reusability
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../reusability/ATI-licensing.html">
+     1. Licensing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../reusability/ATI_licensing_software.html">
+     2. Licensing Software
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../reusability/ATI_licensing_data.html">
+     3. Licensing Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../reusability/expressing-data-use.html">
+     4. Declaring data permitted uses
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../reusability/provenance.html">
+     5. Introducing Provenance Information
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../infrastructure.html">
+   Infrastructure
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../infrastructure/id-resolution.html">
+     1. Introducing identifier resolution services
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../infrastructure/gupri.html">
+     2. Creating resolvable identifiers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../infrastructure/data-catalog.html">
+     3. Building a catalogue of datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../infrastructure/dats-model.html">
+     4. Introducing the DATS model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../infrastructure/data-catalog-deployment.html">
+     5. Deploying a data catalogue - The IMI data catalogue example
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../infrastructure/vocabularies.html">
+     6. Vocabulary management
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../infrastructure/vocabularies/technical-and-architectural-selection-criteria-of-ontology-lookup-services.html">
+       6.1. Introducing vocabulary portals and lookup services
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../infrastructure/vocabularies/Selecting_and_using_ontology_lookup_services.html">
+       6.2. Selecting an ontology lookup service
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../infrastructure/vocabularies/UC3_R13_local_ontology_services.html">
+       6.3. Deploying EBI Ontology Loopkup Service
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../infrastructure/openrefine-nvt.html">
+     7. Using OpenRefine and Karma for FAIRification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../infrastructure/fair-api.html">
+     8. Developing FAIR API for the Web
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../assessing-fairness.html">
+   Assessment
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../assessing-fairness/fair-assessment-fairevaluator.html">
+     1. Assessing with FAIR Evaluator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../assessing-fairness/fair-assessment-fairshake.html">
+     2. Assessing with FAIRshake
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  FAIR Maturity
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../maturity.html">
+   Changing culture with the Dataset Maturity Model
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../reusability/miappe.html">
+     Improving dataset maturity - the MIAPPE use case
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../maturity/isa-maturity-progression.html">
+     Moving through maturity levels with ISA
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../maturity/create-a-simple-ISA-descriptor.html">
+       Minimal Data Maturity with ISA - ISA-Tab and free text
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../maturity/isa-api-programmatic-rebuild-of-BII-S-3.html">
+       Enhanced Data Maturity with ISA - ISA-JSON and ontology markup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../maturity/isa-json-conversion-to-rdf-linked-data.html">
+       Moving to a semantically typed version - ISA-JSON-LD
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../maturity/isa-as-RO.html">
+       Dissemination - Packaging ISA as a Research Object (RO)
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../applied-examples/fair-data-matrix-recipe.html">
+     Making an omics data matrix FAIR
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../applied-examples/fair-data-matrix/0-rose-metabolites-Python-data-handling.html">
+       FAIRifying Data Matrices - Step1 - Starting material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../applied-examples/fair-data-matrix/1-rose-metabolites-Python-analysis.html">
+       FAIRifying Data Matrices - Step2 - Structuring data
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../applied-examples/fair-data-matrix/2-rose-metabolites-Python-RDF-querying-analysis.html">
+       FAIRifying Data Matrices - Step3 - Exploring data with SPARQL
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../applied-examples/fair-data-matrix/3-rose-metabolites-R-analysis.html">
+       FAIRifying Data Matrices - Step4 - Integrating data
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../applied-examples/fair-workflows.html">
+     Making Computational Workflows FAIR
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  FAIRified Datasets
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../applied-examples.html">
+   Applied examples
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../applied-examples/etox.html">
+     1. IMI eTox - toxicity datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../applied-examples/nd4bb.html">
+     2. IMI nd4bb - chemical activities datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../applied-examples/oncotrack_raw/rawRecipe-oncotrack.html">
+     3. Readying IMI Oncotrack - clinical cohort datasets for deposition to EBI Biosamples
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../applied-examples/resolute_raw/resolute.html">
+     4. Depositing IMI ReSOLUTE transcriptomics datasets to EBI repositories
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../applied-examples/ehden-ohdsi.html">
+     5. Enhancing discoverability of EHDEN OHDSI data with Schema.org markup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../applied-examples/eubopen-hcs-bioimage.html">
+     6. Depositing IMI EUBOPEN High-Content Screening data to EBI BioImage Archive
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../applied-examples/approach-cdisc.html">
+     7. Mapping IMI APPROACH datasets to CDISC-SDTM standard
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  AFTERWORD
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../afterword/fair-reflections.html">
+   Lessons learned from the FAIR journey and project outlook
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  GLOSSARY
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../introduction/glossary-fair-terms.html">
+   Glossary of terms and abbreviations
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  JOIN US
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../community.html">
+   Community
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../afterword/people.html">
+     Boards and contributors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../afterword/code_of_conduct.html">
+     Code of conduct
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../afterword.html">
+     Platform
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../afterword/the-turing-way.html">
+       Leveraging the Turing Way Book
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../help.html">
+   Contribute
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../afterword/contributing.html">
+     1. How to contribute
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../help/how-to-create-recipe-with-gdoc.html">
+     2. Add via GoogleDoc
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../help/how-to-create-recipe-with-hackmd.html">
+     3. Add via HackMD
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../help/how-to-create-recipe-with-git.html">
+     4. Add via Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../help/recipe-template.html">
+     5. Git recipe template
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../help/tips-tricks.html">
+     6. Tips and tricks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../help/myst.html">
+     7. Markdown cheatsheet
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav>
+        
+        
+             <!-- To handle the deprecated key -->
+
+        
+    </div>
+
+    <div class="text-center px-5 lighten-3 grey py-2">
+        Powered by <a href="https://jupyterbook.org" class="secondary--text">Jupyter Book</a>
+    </div>
+</div>
+                        </div>
+                        
+                            <main class="bd-content" role="main" style="width:1%; flex-grow:1;">
+                                <v-container fluid id="main-content" class="pa-0">
+                                    <v-row class="d-flex">
+                                        
+                                            <v-col class="col-xl-10 col-lg-10 col-md-9 col-12 px-10 pt-10 mt-3">
+                                                
+  <div class="section" id="marking-up-data-pages-with-schema-org-bioschemas-for-seo">
+<span id="fcb-find-bs-data"></span><h1><span class="section-number">9.9.1. </span>Marking up Data pages with <a class="reference external" href="http://Schema.org">Schema.org</a> &amp; Bioschemas for SEO<a class="headerlink" href="#marking-up-data-pages-with-schema-org-bioschemas-for-seo" title="Permalink to this headline">¶</a></h1>
+<script type="application/ld+json"> {"@context": {"bs": "https://bioschema.org/", "dc": "http://purl.org/dc/terms/", "owl": "http://www.w3.org/2002/07/owl#", "sdo": "https://schema.org/"}, "@type": ["sdo:HowTo", "sdo:LearningResource"], "@id": "https://w3id.org/faircookbook/FCB011", "sdo:name": "Marking up Data pages with Schema.org & Bioschemas for SEO", "sdo:description": "Marking up Data pages with Schema.org & Bioschemas for SEO", "sdo:keywords": [], "dc:conformsTo": {"@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE", "@type": "CreativeWork"}, "sdo:inLanguage": ["en-GB"], "sdo:audience": ["Software Developer|NA", "Data Scientist|T4FS_0000566"], "sdo:isPartOf": [{"@type": "CreativeWork", "@id": "https://fairplus.github.io/the-fair-cookbook/", "sdo:url": "https://fairplus.github.io/the-fair-cookbook/", "sdo:name": "The FAIR Cookbook"}], "sdo:learningResourceType": "Guidance", "sdo:identifier": {"@type": "PropertyValue", "@id": "", "sdo:name": "FCB011", "dso:url": "https://w3id.org/faircookbook/FCB011", "owl:sameAs": "https://identifiers.org/fcb:FCB011"}, "sdo:license": {"@type": "CreativeWork", "@id": "https://creativecommons.org/licenses/by/4.0/", "sdo:url": "https://creativecommons.org/licenses/by/4.0/", "sdo:name": "CC-BY-4.0"}, "sdo:timeRequired": "PT0H10M0S", "sdo:totalTime": "PT0H10M0S", "sdo:step": [{"@type": "sdo:HowToSection", "sdo:position": "1", "sdo:name": "Overview", "sdo:url": "https://w3id.org/faircookbook/FCB011#main-objectives", "sdo:itemListElement": [{"@type": "sdo:HowToStep", "sdo:position": "1", "sdo:name": "", "sdo:itemListElement": [{"@type": "sdo:HowToDirection", "sdo:position": "1", "sdo:name": "step-by-step section", "sdo:text": "Follow the step-by-step section.", "sdo:url": "https://w3id.org/faircookbook/FCB011#main-objectives"}, {"@type": "sdo:HowToTip", "sdo:position": "2", "sdo:name": "Reporting an issue", "sdo:text": "Use our GitHub issue tracker to report any error. Thanks!", "sdo:url": "https://github.com/FAIRplus/the-fair-cookbook/issues/new/choose"}]}]}, {"@type": "sdo:HowToSection", "sdo:position": "2", "sdo:name": "Conclusion", "sdo:url": "https://w3id.org/faircookbook/FCB011#conclusion", "sdo:itemListElement": [{"@type": "sdo:HowToStep", "sdo:position": "1", "sdo:name": "", "sdo:itemListElement": [{"@type": "sdo:HowToDirection", "sdo:position": "1", "sdo:name": "conclusion section", "sdo:text": "What to read next?", "sdo:url": "https://w3id.org/faircookbook/FCB011#conclusion"}, {"@type": "sdo:HowToTip", "sdo:position": "2", "sdo:name": "Reporting an issue", "sdo:text": "Use our GitHub issue tracker to report any error. Thanks!", "sdo:url": "https://github.com/FAIRplus/the-fair-cookbook/issues/new/choose"}]}]}]} </script>
+<div class="card my-10 recipe d-flex">
+<div class="card-header purple-dark text--white">
+<div class="overview">
+<div class="overviewLabel">Recipe Overview</div>
+<div class="overviewContent">
+<div class="item"><div class="itemContainer">
+<i class="itemIcon fa fa-clock fa-2x text--white"></i>
+<div class="itemContent">
+<div class="label"> Reading Time </div>
+10 minutes
+</div>
+</div></div>
+<div class="item"><div class="itemContainer">
+<i class="itemIcon fa fa-play-circle fa-2x text--white"></i>
+<div class="itemContent">
+<div class="label"> Executable Code </div>
+No
+</div>
+</div></div>
+<div class="item" style="margin-bottom:10px"><div class="itemContainer">
+<i class="itemIcon fa fa-fire fa-2x text--white" style="margin-left:4px;margin-right: 5px;"></i>
+<div class="itemContent">
+<div class="label" style="position:relative; left:-6px">Difficulty</div>
+<i class="fa fa-fire"></i>
+<i class="fa fa-fire"></i>
+<i class="fa fa-fire" style="color:grey"></i>
+<i class="fa fa-fire" style="color:grey"></i>
+<i class="fa fa-fire" style="color:grey"></i>
+</div>
+</div></div>
+</div></div>
+</div>
+<div class="card-body text--purple-dark">
+<div class="title">
+<div style="flex-grow:1; margin-right:5px">Marking up Data pages with Schema.org & Bioschemas for SEO</div>
+<img src="https://fairplus.github.io/the-fair-cookbook/_static/images/fairplus-mini.png" alt="FAIRPlus logo"> </img>
+</div>
+<div class="section">
+<i class="sectionIcon fa fa-laptop fa-2x"></i><div class="sectionContent">
+<div class="label">Recipe Type</div>
+<div class="sectionValue">Guidance</div>
+</div>
+</div>
+<div class="section" style="flex-grow: 1;">
+<i class="sectionIcon fa fa-users fa-2x"></i><div class="sectionContent">
+<div class="label">Audience</div>
+<div class="sectionValue">Software Developer, <a href="http://purl.obolibrary.org/obo/T4FS_0000566">Data Scientist</a></div>
+</div>
+</div>
+<div class="section" style="flex-grow: 1;">
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="signal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" class="bars level-1">
+<path class="bar5" d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm256-192h-48c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm128-96h-48c-8.84 0-16 7.16-16 16v384c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V112c0-8.84-7.16-16-16-16zM600 0h-48c-8.84 0-16 7.16-16 16v480c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V16c0-8.84-7.16-16-16-16z"/>
+<path class="bar4" d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm256-192h-48c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm128-96h-48c-8.84 0-16 7.16-16 16v384c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V112c0-8.84-7.16-16-16-16zM600" />
+<path class="bar3" d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm256-192h-48c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm128-96h-48c-8.84" />
+<path class="bar1" d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm256-192h-48c-8.84"/>
+<path class="bar2" d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84"/>
+</svg>
+<div class="sectionContent">
+<div class="label">Maturity Level & Indicator</div>
+<div class="sectionValue"><v-chip-group><v-chip href="https://w3id.org/Data-Maturity/DSM-1-R4" class="secondary white--text" target="_blank" label>DSM-1-R4</v-chip><v-chip href="https://w3id.org/Data-Maturity/DSM-1-R5" class="secondary white--text" target="_blank" label>DSM-1-R5</v-chip></v-chip-group></div>
+<div class="tooltip">hover me
+<span class="tooltiptext">Tooltip text</span></div>
+</div>
+</div><div class="card-footer text--orange sphinx-bs.badge.badge-primary"> Cite me with 
+<a href="https://w3id.org/faircookbook/FCB011" class="text--purple-dark">FCB011
+</a></div>
+</div>
+</div>
+<div class="section" id="main-objectives">
+<h2><span class="section-number">9.9.1.1. </span>Main Objectives<a class="headerlink" href="#main-objectives" title="Permalink to this headline">¶</a></h2>
+<p>The main purpose of this recipe is:</p>
+<blockquote>
+<div><p>To markup a webpage representing a data record with <code class="docutils literal notranslate"><span class="pre">Bioschemas</span></code> compliant markup.</p>
+</div></blockquote>
+<div class="tabbed-set docutils">
+<input checked="checked" id="81db6a79-ca9f-4cfa-90a3-0d4d1c8a8b11" name="56e4fad5-2380-41ca-a2d0-2132a075c214" type="radio">
+</input><label class="tabbed-label" for="81db6a79-ca9f-4cfa-90a3-0d4d1c8a8b11">
+FAIRification Objectives, Inputs and Outputs</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Actions.Objectives.Tasks</p></th>
+<th class="text-align:left head"><p>Input</p></th>
+<th class="text-align:left head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference external" href="https://edamontology.org/operation_3778">text annotation</a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="https://fairsharing.org/FAIRsharing.20sbr9">Bioschemas</a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="https://edamontology.org/data_3779">annotated text</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><a class="reference external" href="https://edamontology.org/operation_2428">validation</a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="https://fairsharing.org/FAIRsharing.hzdzq8">schema.org</a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="https://edamontology.org/data_2048">report</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="aaa8d023-7861-436c-8b90-c8ec683c85c7" name="56e4fad5-2380-41ca-a2d0-2132a075c214" type="radio">
+</input><label class="tabbed-label" for="aaa8d023-7861-436c-8b90-c8ec683c85c7">
+Table of Data Standards</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Data Formats</p></th>
+<th class="text-align:left head"><p>Terminologies</p></th>
+<th class="text-align:left head"><p>Models</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference external" href="https://edamontology.org/format_3749">JSON-LD</a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="https://fairsharing.org/FAIRsharing.20sbr9">Bioschemas</a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="https://edamontology.org/data_2353">RDF</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><a class="reference external" href="https://edamontology.org/format_2331">HTML</a></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="graphical-overview">
+<h2><span class="section-number">9.9.1.2. </span>Graphical Overview<a class="headerlink" href="#graphical-overview" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3" open="open">
+<summary class="summary-title card-header">
+<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
+    class="octicon no-title" aria-hidden="true">
+  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
+    <circle cx="0" cy="12" r="6"></circle>
+    <circle cx="18" cy="12" r="6"></circle>
+    <circle cx="36" cy="12" r="6"></circle>
+  </g>
+</svg><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="../../../../_images/bs-data-mermaid.png"><img alt="The process of annotated a webpage with Bioschemas markup to support machine processing of the page" src="../../../../_images/bs-data-mermaid.png" style="width: 800px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9.3 </span><span class="caption-text">The process of annotated a webpage with Bioschemas markup to support machine processing of the page.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</details></div>
+<hr class="docutils" />
+<div class="section" id="method">
+<h2><span class="section-number">9.9.1.3. </span>Method<a class="headerlink" href="#method" title="Permalink to this headline">¶</a></h2>
+<p>We will outline the steps for embedding machine processable mark up within a web page in your site. As a specific example, we will use the Wikidata page for <a class="reference external" href="https://www.wikidata.org/wiki/Q227339">BRCA1</a>.</p>
+<ol>
+<li><p>Identify a data page in your site for which you will develop markup</p></li>
+<li><p>Open the <a class="reference external" href="https://www.macs.hw.ac.uk/SWeL/BioschemasGenerator/">Bioschemas Generator</a></p>
+<ol class="simple">
+<li><p>Select the type of data page that you are marking up, i.e. the primary subject of the page. In the example we will use <code class="docutils literal notranslate"><span class="pre">Gene</span></code>. Here are the Bioschemas <a class="reference external" href="https://bioschemas.org/profiles/">profiles</a> that you can choose from<sup><a class="reference external" href="#draft-profiles">1</a></sup>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ChemicalSubstance</span></code> for a page about a chemical substance composed of molecular entities</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Gene</span></code> for a page about a gene</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MolecularEntity</span></code> for a page about a single molecular entity</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Protein</span></code> for a page about a protein</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BioSample</span></code> for a page about a biological sample</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Taxon</span></code> for a page about a taxon</p></li>
+</ul>
+</li>
+<li><p>Enter the URL of the page in URL box, e.g. <code class="docutils literal notranslate"><span class="pre">https://www.wikidata.org/wiki/Q227339</span></code>. Note that this URL will be used as the identifier for the resource being described in the markup.</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Form</span></code> button</p></li>
+</ol>
+<details class="sphinx-bs dropdown card mb-3" open="open">
+<summary class="summary-title card-header">
+<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
+    class="octicon no-title" aria-hidden="true">
+  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
+    <circle cx="0" cy="12" r="6"></circle>
+    <circle cx="18" cy="12" r="6"></circle>
+    <circle cx="36" cy="12" r="6"></circle>
+  </g>
+</svg><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="figure align-default" id="bioschemas-generator-start-screen-2">
+<img alt="Bioschemas Generator start screen." src="../../../../_images/BioschemasGenerator.png" />
+<p class="caption"><span class="caption-number">Fig. 9.4 </span><span class="caption-text">Bioschemas Generator start screen.</span><a class="headerlink" href="#bioschemas-generator-start-screen-2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</details></li>
+<li><p>Complete the profile form with the data relevant for your page. Once completed, click on the <code class="docutils literal notranslate"><span class="pre">Generate</span> <span class="pre">Markup</span></code>  button</p>
+<ul class="simple">
+<li><p>You should complete all <em>Minimum</em> properties and as many <em>Recommended</em> properties as possible. You can show/hide properties using the <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">Properties</span></code> buttons.</p></li>
+<li><p>The form defaults to the data type with the first alphabetical character, e.g. for <code class="docutils literal notranslate"><span class="pre">identifier</span></code> this defaults to <code class="docutils literal notranslate"><span class="pre">PropertyValue</span></code> but <code class="docutils literal notranslate"><span class="pre">Text</span></code> or <code class="docutils literal notranslate"><span class="pre">URL</span> </code> will be more appropriate in most cases</p></li>
+<li><p>The right side of the screen gives examples for properties, where these have been provided by the Bioschemas profile authors. Click on the <code class="docutils literal notranslate"><span class="pre">Show</span></code> button to see the example for a specific property. Click on <code class="docutils literal notranslate"><span class="pre">Minimum</span></code>, <code class="docutils literal notranslate"><span class="pre">Recommended</span></code>, or <code class="docutils literal notranslate"><span class="pre">Optional</span></code> to expand/contract the section and see the properties contained at that marginality level</p></li>
+</ul>
+<details class="sphinx-bs dropdown card mb-3" open="open">
+<summary class="summary-title card-header">
+<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
+    class="octicon no-title" aria-hidden="true">
+  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
+    <circle cx="0" cy="12" r="6"></circle>
+    <circle cx="18" cy="12" r="6"></circle>
+    <circle cx="36" cy="12" r="6"></circle>
+  </g>
+</svg><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="figure align-default" id="bioschemas-generator-gene-profile-form">
+<a class="reference internal image-reference" href="../../../../_images/BioschemasGeneratorGeneForm.png"><img alt="Bioschemas Generator Gene profile form" src="../../../../_images/BioschemasGeneratorGeneForm.png" style="height: 550px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9.5 </span><span class="caption-text">Bioschemas Generator Gene profile form.</span><a class="headerlink" href="#bioschemas-generator-gene-profile-form" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</details></li>
+<li><p>You should now see the generated markup in <code class="docutils literal notranslate"><span class="pre">JSON-LD</span></code> format. You can click on the <code class="docutils literal notranslate"><span class="pre">Microdata</span></code> and <code class="docutils literal notranslate"><span class="pre">RDFa</span></code> tabs to see the same content rendered in the different formats. However, we recommend the use of <code class="docutils literal notranslate"><span class="pre">JSON-LD</span></code>. For our Wikidata example, we get the following markup</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/ld+json&quot;</span> <span class="p">&gt;</span>
+<span class="p">{</span>
+  <span class="s2">&quot;@context&quot;</span><span class="o">:</span> <span class="s2">&quot;https://schema.org&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;@id&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q227339&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;@type&quot;</span><span class="o">:</span> <span class="s2">&quot;Gene&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;alternateName&quot;</span><span class="o">:</span> <span class="p">[</span>
+    <span class="s2">&quot;breast cancer 1, early onset&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BRCAI&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BRCC1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BROVCA1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;IRIS&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PNCA4&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PPP1R53&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PSCP&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;RNF53&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;FANCS&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;breast cancer 1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BRCA1, DNA repair associated&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BRCA1 DNA repair associated&quot;</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;dct:conformsTo&quot;</span><span class="o">:</span> <span class="s2">&quot;https://bioschemas.org/profiles/Gene/0.7-RELEASE&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;protein-coding gene in the species Homo sapiens&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;encodesBioChemEntity&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;@type&quot;</span><span class="o">:</span> <span class="s2">&quot;BioChemEntity&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;@id&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q17487737&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;identifier&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q227339&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;identifier&quot;</span><span class="o">:</span> <span class="s2">&quot;Q227339&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;image&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;@type&quot;</span><span class="o">:</span> <span class="s2">&quot;ImageObject&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;@id&quot;</span><span class="o">:</span> <span class="s2">&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Protein_BRCA1_PDB_1jm7.png/220px-Protein_BRCA1_PDB_1jm7.png&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;isPartOfBioChemEntity&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;@type&quot;</span><span class="o">:</span> <span class="s2">&quot;BioChemEntity&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;@id&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q220677&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;BRCA1&quot;</span><span class="p">,</span> 
+  <span class="s2">&quot;sameAs&quot;</span><span class="o">:</span> <span class="p">[</span>
+    <span class="s2">&quot;https://meshb.nlm.nih.gov/#/record/ui?ui=D019398&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;https://www.ncbi.nlm.nih.gov/nuccore/NR_027676&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;https://identifiers.org/ensembl/ENSG00000012048&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;https://www.ncbi.nlm.nih.gov/gene/672&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;https://identifiers.org/ncbigene/672&quot;</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;taxonomicRange&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;@type&quot;</span><span class="o">:</span> <span class="s2">&quot;Taxon&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;@id&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q15978631&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q227339&quot;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span> <span class="p">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Download or copy and paste the generated markup</p></li>
+<li><p>Make adjustments for any bits that could not be properly entered through the form.</p>
+<p>For example, for our generated markup we would change</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;encodesBioChemEntity&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;BioChemEntity&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q17487737&quot;</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;encodesBioChemEntity&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;Protein&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.wikidata.org/wiki/Q17487737&quot;</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<p>You can test that your JSON-LD is valid syntax, and visualise your markup using the <a class="reference external" href="https://json-ld.org/playground/">JSON-LD Playground</a>.</p>
+</li>
+<li><p>Once you are happy with your markup, include the <code class="docutils literal notranslate"><span class="pre">JSON-LD</span></code>, script tags and all, at the bottom of your HTML page template. Make sure that this is before the closing <code class="docutils literal notranslate"><span class="pre">&lt;/html&gt;</span></code> tag</p>
+<ol>
+<li><p>Replace the values in your markup with variables that your web page templating system will replace with values from your database. For example, the follow snippet uses variables of the form <code class="docutils literal notranslate"><span class="pre">%%%PAGEURL%%%</span></code></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/ld+json&quot;</span> <span class="p">&gt;</span>
+<span class="p">{</span>
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@id&quot;: &quot;%%%PAGEURL%%%&quot;,
+  &quot;@type&quot;: &quot;Gene&quot;,
+  &quot;dct:conformsTo&quot;: &quot;https://bioschemas.org/profiles/Gene/0.7-RELEASE&quot;,
+  &quot;identifier&quot;: &quot;%%%PAGEURL%%%&quot;,
+  &quot;description&quot;: &quot;%%%DESCRIPTION%%%&quot;,
+  ...
+}
+</pre></div>
+</div>
+<p>Your site should now generate data pages with embedded markup.</p>
+<p>You should complete this process for each different type of data that you include in your site, e.g. ChEMBL would
+have <code class="docutils literal notranslate"><span class="pre">MolecularEntity</span></code> markup on their chemical pages and <code class="docutils literal notranslate"><span class="pre">Protein</span></code> markup on their target pages so would need to
+complete this process twice.</p>
+<p>Once you have deployed this on your web server, you can test it with the <a class="reference external" href="https://www.macs.hw.ac.uk/SWeL/BioschemasValidator/">Bioschemas Validator</a> which scrapes the markup from your page and allows you to test it against various Bioschemas profiles<sup><a class="reference external" href="#bioschemas-validator">2</a></sup>.</p>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="conclusion">
+<h2><span class="section-number">9.9.1.4. </span>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-to-read-next">
+<h3><span class="section-number">9.9.1.4.1. </span>What to read next?<a class="headerlink" href="#what-to-read-next" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="bioschemas-datacatalog.html#fcb-find-bs-catalog"><span class="std std-ref">Marking up Data Catalogue page with Schema.org &amp; Bioschemas for SEO</span></a></p></li>
+<li><p><a class="reference internal" href="bioschemas-dataset.html#fcb-find-bs-dataset"><span class="std std-ref">Marking up Dataset page with Schema.org &amp; Bioschemas for SEO</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="references">
+<h2><span class="section-number">9.9.1.5. </span>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>References</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><a name="draft-profiles">1</a>: If you do not see your data type listed, tick the <code class="docutils literal notranslate"><span class="pre">Include</span> <span class="pre">Draft</span> <span class="pre">Profiles</span></code> to see if there is a draft profile for your data type. Otherwise contact the Bioschemas community to suggest development of a new profile.<br />
+<a name="bioschemas-validator">2</a>: The Bioschemas Validator is currently in an early alpha release and does not include all the profiles.</p>
+</div>
+</details></div>
+<div class="section" id="authors">
+<h2><span class="section-number">9.9.1.6. </span>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Authors</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p class="card-text">Name</p></th>
+<th class="head"><p class="card-text">ORCID</p></th>
+<th class="head"><p class="card-text">Affiliation</p></th>
+<th class="head"><p class="card-text">Type</p></th>
+<th class="head"><p class="card-text">ELIXIR Node</p></th>
+<th class="head"><p class="card-text">Contribution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="card-text"><div class="firstCol"><a target="_blank" href="https://github.com/{github_handle}"><img class="avatar-style" src="https://avatars.githubusercontent.com/AlasdairGray"></img><div class="d-block">Alasdair J G Gray</div></a></div></p></td>
+<td><p class="card-text"><a target="_blank" href="https://orcid.org/0000-0002-5711-4872"><i class="fab fa-orcid fa-2x text--orange"></i></a></p></td>
+<td><p class="card-text">Heriot Watt University</p></td>
+<td><p class="card-text"><i class="fas fa-graduation-cap fa-1x text--orange" alt="Academic"></i></p></td>
+<td><p class="card-text"><img class="elixir-style" src="../../../_static/images/logo/Elixir/ELIXIR-UK.svg" ></img></p></td>
+<td><p class="card-text">Writing - Original Draft</p></td>
+</tr>
+<tr class="row-odd"><td><p class="card-text"><div class="firstCol"><a target="_blank" href="https://github.com/{github_handle}"><img class="avatar-style" src="https://avatars.githubusercontent.com/ljgarcia"></img><div class="d-block">Leyla Garcia</div></a></div></p></td>
+<td><p class="card-text"><a target="_blank" href="https://orcid.org/0000-0003-3986-0510"><i class="fab fa-orcid fa-2x text--orange"></i></a></p></td>
+<td><p class="card-text">ZB MED Information Centre for life sciences</p></td>
+<td><p class="card-text"><i class="fas fa-graduation-cap fa-1x text--orange" alt="Academic"></i></p></td>
+<td><p class="card-text"></p></td>
+<td><p class="card-text">Writing - Review &amp; Editing</p></td>
+</tr>
+<tr class="row-even"><td><p class="card-text"><div class="firstCol"><a target="_blank" href="https://github.com/{github_handle}"><img class="avatar-style" src="https://avatars.githubusercontent.com/proccaserra"></img><div class="d-block">Philippe Rocca-Serra</div></a></div></p></td>
+<td><p class="card-text"><a target="_blank" href="https://orcid.org/0000-0001-9853-5668"><i class="fab fa-orcid fa-2x text--orange"></i></a></p></td>
+<td><p class="card-text">University of Oxford</p></td>
+<td><p class="card-text"><i class="fas fa-graduation-cap fa-1x text--orange" alt="Academic"></i></p></td>
+<td><p class="card-text"><img class="elixir-style" src="../../../_static/images/logo/Elixir/ELIXIR-UK.svg" ></img></p></td>
+<td><p class="card-text">Writing - Review &amp; Editing</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details></div>
+<div class="section" id="license">
+<h2><span class="section-number">9.9.1.7. </span>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>License</strong><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<a href="https://creativecommons.org/licenses/by/4.0/">
+    <img src="../../../_static/images/logo/cc.svg"  height="25"/>
+    <img src="../../../_static/images/logo/by.svg"  height="25"/></a>
+    <a href="https://creativecommons.org/licenses/by/4.0/"> The Creative Commons 4.0 BY license</a></br>
+    <br/>
+</div>
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/recipes/findability/seo"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                                            </v-col>
+                                            <div class="d-none d-md-block col-md-2 bd-toc show collapse custom-bdtoc pt-5">
+                                                <div style="position: fixed">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#main-objectives">
+   9.9.1.1. Main Objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#graphical-overview">
+   9.9.1.2. Graphical Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#method">
+   9.9.1.3. Method
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   9.9.1.4. Conclusion
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-to-read-next">
+     9.9.1.4.1. What to read next?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   9.9.1.5. References
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#authors">
+   9.9.1.6. Authors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#license">
+   9.9.1.7. License
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        </div>
+                                            </div>
+                                        
+                                    </v-row>
+
+                                    
+                                        <v-row class="mb-5">
+                                            <div class='pl-10 prev-next-bottom mr-10' style="width:82%">
+                                                
+<a class='left-prev' id="prev-link" href="../seo.html" title="previous page"><span class="section-number">9. </span>Search Engine Optimization (SEO)</a>
+<a class='right-next' id="next-link" href="bioschemas-dataset.html" title="next page"><span class="section-number">9.9.2. </span>Marking up Dataset page with Schema.org &amp; Bioschemas for SEO</a>
+
+                                            </div>
+                                        </v-row>
+                                    
+                                </v-container>
+                            </main>
+                        
+                    
+                </v-row>
+                
+            </v-container>
+        </v-row>
+    </v-container>
+</v-app>
+
+
+  <script src="../../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+
+<!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-171697285-1', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+<v-container fluid>
+    <v-row no-gutter>
+        <v-col cols="12"><footer class="footer" style=" margin-top: 12px;  ">
+    <div class="container-md mt-4">
+      <div class="row" style="display:flex; justify-content: center">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
+            <div class="footerImages">
+              <a href="https://europa.eu/"><img src="/_static/images/logo/eu-flag.png" height="40" alt="EU flag"></a>
+              <a href="https://www.imi.europa.eu/"><img src="/_static/images/logo/imi-logo.png" height="40" alt="IMI logo"></a>
+              <a href="https://efpia.eu"><img src="/_static/images/logo/efpia-logo.png" height="40" alt="EFPIA logo"></a>
+            </div>
+            <div class="mb-3"> Grant agreement 802750 </div>
+          </div>
+          <div class="col-5 col-sm-2 col-xs-5 col-md-2 col-lg-2 col-xl-2">
+              <ul>
+                <li><a href="mailto:fairplus-cookbook@elixir-europe.org"> Contact us </a></li>
+                <li><a href="https://fairplus-project.eu" target="_blank"> FAIRplus </a> </li>
+              </ul>
+          </div>
+          <div class="col-5 col-sm-2 col-xs-5 col-md-2 col-lg-2 col-xl-2">
+              <ul>
+                <li> <a href="https://faircookbook.elixir-europe.org/content/recipes/afterword/people.html  "> Contributors </a> </li> </li>
+                <li> <a href="https://faircookbook.elixir-europe.org/content/recipes/help.html"> How to contribute </a> </li>
+              </ul>
+          </div>
+          <div class="col-12 col-sm-4 col-xs-12 col-md-3 col-lg-3 col-xl-3 pb-5">
+            <a class="mr-3" href="https://elixir-europe.org/" target="_blank"><img src="/_static/images/logo/Elixir/ELIXIR.png" height="50" alt="Elixir logo"></a>
+            <a href="https://fairplus-project.eu/"><img src="https://fairplus-project.eu/images/fairplus-logo.png" alt="FAIRplus logo" style="background:white;padding:5px;height:33px;"></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="padding:0">
+        <div class="row" style="padding:0; margin:0">
+            <div class="col-12 purple-dark">
+                The FAIR Cookbook is licensed under the
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                    Creative Commons Attribution 4.0 International
+                </a> (CC BY 4.0) license.
+            </div>
+        </div>
+        <div class="row extra_footer d-none">
+            <script> mermaid.init() </script>
+        </div>
+    </div>
+
+</footer> </v-col>
+    </v-row>
+</v-container>
+<script type="application/javascript">
+    const vuetify = new Vuetify({
+        theme: {
+            themes: {
+                light: {
+                    primary: '#421C6E',
+                    secondary: '#FC7A4A',
+                    accent: '#8038D1',
+                    error: '#FF5252',
+                    info: '#2196F3',
+                    success: '#7E0038',
+                    warning: '#FFC107'
+                }
+            }
+        },
+        icons: { iconfont: 'fa4' }
+    })
+    const my_vue = new Vue({ el: '#app', vuetify: vuetify })
+
+</script>
+  </body>
+</html>

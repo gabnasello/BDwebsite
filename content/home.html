@@ -1,0 +1,910 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAIR Cookbook</title>
+
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+
+
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/search-wizard.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/search.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/vuetify.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/js/searchNodal.js"></script>
+    <script src="../_static/js/mermaid.core.js"></script>
+    <script src="../_static/js/vue.min.js"></script>
+    <script src="../_static/js/mermaid.js"></script>
+    <script src="../_static/js/mermaid.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://fairplus.github.io/the-fair-cookbook/content/home.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction" href="recipes/introduction/FAIR-cookbook-audience.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.6.9/vuetify.js"
+        integrity="sha512-cgrSlRKhr/ovJePDoGIdcfZ3wiGcc0fT4Q7hAo0x3P1lyLwUmv2NgJtCo2gzFbxqFjKvNnCfVUjZ1XADm0/ZdQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://fairplus.github.io/the-fair-cookbook/content/home.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="FAIR Cookbook" />
+<meta property="og:description" content="FAIR Cookbook                " />
+ <meta property="og:image"       content="https://fairplus.github.io/the-fair-cookbook/_static/cookbook-logo-small.png" /> 
+<meta name="twitter:card" content="summary" />
+  </head>
+<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+
+
+
+<v-app id="app" class="pa-0">
+    <v-container fluid class="pa-0">
+        <v-row class="pa-0" no-gutters>
+            <v-container fluid class="pa-0">
+                <v-row>
+                    <div class="topbar container-xl fixed-top pl-0 primary lighten-1 py-2" style="height:65px !important;">
+    <div class="topbar-contents row" style="margin: initial !important;">
+        <div class="col topbar-main d-flex align-center">
+            
+
+            
+                <a href="../index.html" style="width: 300px">
+                    <img
+                        src="../_static/cookbook-logo-small.png"
+                        class="logo"
+                        alt="The FAIR Cookbook"
+                        style="width: 100%"
+                    >
+                </a>
+            
+
+            <v-spacer> </v-spacer>
+            <div class="mr-4 extraButtons">
+                <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger d-flex justify-center align-center" style="height:100%">
+
+    <v-menu offset-y content-class="elevation-0" open-on-hover>
+        <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              id="dropdown-buttons-trigger"
+              color="white"
+              outlined
+              v-bind="attrs"
+              v-on="on"
+              flat
+              solo
+              rounded
+              :fab="$vuetify.breakpoint.mdAndDown"
+              :small="$vuetify.breakpoint.mdAndDown"
+              :class="$vuetify.breakpoint.mdAndDown ? 'pa-0' : ''"
+            >
+                <v-icon :class="$vuetify.breakpoint.lgAndUp ? 'mr-3' : 'mx-1'" left>fab fa-github</v-icon>
+                <span v-if="$vuetify.breakpoint.lgAndUp"> GitHub </span>
+            </v-btn>
+        </template>
+        <div class="homepageMenu d-flex flex-column">
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook"
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mr-3" left>fab fa-github</v-icon>
+                repository
+            </v-btn>
+            
+
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook/issues/new?title=Issue%20on%20page%20%2Fcontent/home.html&body=Your%20issue%20content%20here."
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mr-3" left>fas fa-lightbulb</v-icon>
+                open issue
+            </v-btn>
+            
+
+            
+            <v-btn
+              color="grey darken-1"
+              dark
+              flat
+              solo
+              rounded
+              href="https://github.com/FAIRplus/the-fair-cookbook/edit/main/content/home.md"
+              class="mt-1"
+              target="_blank"
+            >
+                <v-icon class="mx-3" left>fas fa-pencil-alt</v-icon>
+                suggest edit
+            </v-btn>
+            
+        </div>
+    </v-menu>
+</div>
+
+                <!-- Launch buttons -->
+
+            </div>
+                
+                    <script>
+    Vue.component("Searchfield", {
+      data () { return {
+        query: null
+      } },
+      methods: {
+        search() {
+            if (this.query) window.location.href = `search-wizard.html?q=` + this.query
+            else window.location.href = `search-wizard.html`
+        }
+      },
+      template: `
+      <div style="width:250px">
+            <v-text-field
+              v-model="query"
+              append-icon="fa-search"
+              label="Search Wizard..."
+              dense
+              rounded
+              single-line
+              solo
+              hide-details
+              class="white primary--text"
+              @click:append="search"
+              @keyup.enter="search"
+            />
+      </div>
+      `
+    })
+</script>
+
+<Searchfield> </Searchfield>
+
+
+
+
+
+
+                
+                
+                
+        </div>
+    </div>
+</div>
+                </v-row>
+                
+                    <v-row no-gutters>
+                        <v-col cols="12" id="homepage">
+    <!-- SCREEN ONE -->
+    <v-container
+        class="primary lighten-1 pa-0 d-flex flex-column justify-center align-center"
+        fluid style="min-height:102vh"
+    >
+        <div class="homeTitle d-flex flex-column justify-center align-center" style="flex-grow: 1">
+            <h1 class="white--text pt-10 mt-10" style="font-size: 50px !important;">
+                The <span class="secondary--text">FAIR</span> Cookbook
+                <span
+                    class="d-flex justify-end align-end mt-1 font-italic"
+                    :class="$vuetify.breakpoint.smAndUp ? 'justify-end' : 'justify-center'"
+                    style="font-size:35px !important"
+                >
+                    for FAIR doers
+                </span>
+            </h1>
+            <v-container>
+                <h2 class="white--text text-center pa-4 mt-0">
+                    <p style="font-size: 30px !important;">
+                        <b :style="$vuetify.breakpoint.mdAndUp ? 'line-height:3.2rem' : '' ">
+                            An online, <span class="secondary--text">open</span> and <span class="secondary--text">live</span>
+                            resource for the Life Sciences with recipes that help you to make
+                            and keep data Findable, Accessible, Interoperable and Reusable; in one word FAIR.
+                        </b>
+                    </p>
+                </h2>
+            </v-container>
+            <div class="d-flex justify-center align-center">
+                <v-btn x-large class="secondary white--text mr-2" large href="./recipes/introduction/FAIR-cookbook-audience.html">
+                    Learn more
+                </v-btn>
+                <v-btn x-large class="success white--text mx-2" large @click="$vuetify.goTo('#more', {})">
+                    See Recipes
+                </v-btn>
+            </div>
+        </div>
+        <v-btn @click="$vuetify.goTo('#more', {})" fab class="primary--text white mb-6">
+            <v-icon id="more"> fa fa-arrow-down</v-icon>
+        </v-btn>
+    </v-container>
+
+    <!-- SCREEN TWO -->
+    <Lazyload></Lazyload>
+
+    <!-- SCREEN THREE -->
+    <v-container fluid class="pa-0 py-10 primary lighten-1 white--text d-flex flex-column justify-center align-center" style="min-height:90vh">
+
+        <!-- TOP SECTION -->
+        <v-row no-gutters justify="start" v-if="$vuetify.breakpoint.xlOnly" >
+            <userscards> </userscards>
+            <userstext> </userstext>
+        </v-row>
+
+        <v-row v-else no-gutters justify="end" class="pb-10">
+            <userstext> </userstext>
+            <userscards> </userscards>
+        </v-row>
+
+        <!-- BOTTOM SECTION -->
+        <v-row no-gutters justify="end" class="pb-10" v-if="$vuetify.breakpoint.xlOnly">
+            <contributetext> </contributetext>
+            <contributecards> </contributecards>
+        </v-row>
+
+        <v-row v-else no-gutters justify="end" class="pb-10">
+            <contributetext> </contributetext>
+            <contributecards> </contributecards>
+        </v-row>
+
+    </v-container>
+
+</v-col>
+
+<script>
+    Vue.component("Lazyload", {
+        data() {
+            return {
+                isActive: false,
+                items: [
+                    {
+                        title: "Findability",
+                        icon: 'F',
+                        content: [
+                            {
+                                text: "Unique, persistent identifiers",
+                                link: "./recipes/findability/identifiers.html#fcb-find-identifiers"
+                            },
+                            {
+                                text: "Search engine optimization",
+                                link: "./recipes/findability/seo.html#fcb-find-seo"
+                            },
+                        ],
+                        link: './recipes/findability.html'
+                    },
+                    {
+                        title: 'Accessibility',
+                        icon: 'A',
+                        content: [
+                            { text: "Transferring data with SFTP", link: "./recipes/accessibility/sftp.html"},
+                            { text: "Downloading data with Aspera", link: "/recipes/accessibility/aspera.html"},
+                        ],
+                        link: './recipes/accessibility.html'
+                    },
+                    {
+                        title: 'Interoperability',
+                        icon: 'I',
+                        content: [
+                            {
+                                text: "Selecting terminologies and ontologies",
+                                link: "./recipes/interoperability/selecting-ontologies.html"
+                            },
+                            {
+                                text: "Creating a metadata profile",
+                                link: "./recipes/interoperability/creating-minimal-metadata-profiles.html"
+                            },
+                        ],
+                        link: './recipes/interoperability.html'
+                    },
+                    {
+                        title: 'Reusability',
+                        icon: 'R',
+                        content: [
+                            {
+                                text: "Data licenses",
+                                link: "./recipes/reusability/ATI_licensing_data.html"
+                            },
+                            {
+                                text: "Declaring data’s permitted uses",
+                                link: "./recipes/reusability/expressing-data-use.html"
+                            },
+                        ],
+                        link: './recipes/reusability.html'
+                    },
+                ],
+                recipes: [
+                    {
+                        title: "Infrastructure",
+                        link: "./recipes/infrastructure.html",
+                        icon: "fas fa-toolbox"
+                    },
+                    {
+                        title: "Assessments",
+                        link: "./recipes/assessing-fairness.html",
+                        icon: "fas fa-tasks"
+                    },
+                    {
+                        title: "Applied Examples",
+                        link: "./recipes/applied-examples.html",
+                        icon: "fas fa-book"
+                    },
+                    {
+                        title: "Maturity model",
+                        link: "./recipes/maturity.html",
+                        icon: "fas fa-signal"
+                    }
+                ],
+                query: null
+            }
+        },
+        methods: {
+            search() {
+                if (this.query) window.location.href = `search-wizard.html?q=` + this.query
+                else window.location.href = `search-wizard.html`
+            }
+          },
+        template: `
+            <v-lazy v-model="isActive" :options="{ threshold: 1.0 }" id="recipes">
+                <v-container fluid class="pa-0 d-flex flex-column grey lighten-2" style="min-height: 95vh">
+    
+                    <!-- TEXT -->
+                    <v-row no-gutters class="flex-grow-0">
+                        <v-col cols="12" class="grey lighten-2">
+                            <v-container class="d-flex flex-column" :class="$vuetify.breakpoint.lgAndUp ? 'align-start' : 'align-center'">
+                                <h2
+                                    class="text-h2 pb-5 primary--text"
+                                    style="border-bottom:10px solid"
+                                    :class="$vuetify.breakpoint.lgAndDown ? 'mt-0' : ''"
+                                >
+                                    The recipes
+                                </h2>
+                                <p class="text-h4" :class="$vuetify.breakpoint.lgAndUp ? '' : 'text-center'">
+                                    Guiding you through the key steps of a FAIRification journey.
+                                </p>
+                                <p class="text-h6 mb-0" :class="$vuetify.breakpoint.lgAndUp ? '' : 'text-center'">
+                                    Recipes provide you with the levels and indicators of FAIRness,
+                                    the maturity model, the technologies, the tools and the standards available, as well as the
+                                    skills required, and the challenges, to achieve and improve FAIRness.
+                                    <br>
+                                    Each recipe tells you the audience type, reading time, level of difficulty, and the level
+                                    of FAIR maturity it allows you to reach. Recipes are  <b class="secondary--text">citable</b> via their unique identifier,
+                                    and their authors are <b class="secondary--text">credited</b>.
+                                </p>
+                            </v-container>
+                        </v-col>
+                    </v-row>
+
+                    <v-row
+                        justify="center"
+                        class="flex-grow-0"
+                        :no-gutters="$vuetify.breakpoint.lgAndDown"
+                        :class="$vuetify.breakpoint.lgAndDown ? 'my-0 mb-8 mt-4' : 'my-5 pb-10'"
+                    >
+                        <v-col
+                            cols="12" class="d-flex flex-column justify-center align-center"
+                            :class="$vuetify.breakpoint.lgAndDown ? 'pa-0 px-2' : ''"
+                        >
+                            <div
+                                class="text-h4 text-center primary--text font-weight-bold"
+                                :class="$vuetify.breakpoint.lgAndDown ? 'mb-0' : 'mb-5'"
+                            >
+                                Use the wizard to search all recipes
+                            </div>
+                            <v-text-field
+                                v-model="query"
+                                color="primary"
+                                class="mt-5 primary--text homeInputWizard"
+                                label="Search Wizard"
+                                solo
+                                single-line
+                                hide-details
+                                rounded
+                                @click:append="search"
+                                @keyup.enter="search"
+                             >
+                                <template v-slot:append>
+                                    <v-btn
+                                        class="primary white--text"
+                                        @click="search"
+                                        elevation="0"
+                                    >
+                                        <v-icon class="white--text mr-3">fas fa-search</v-icon>
+                                        <span class="white--text"> Search </span>
+                                    </v-btn>
+                                </template>
+                             </v-text-field>
+                        </v-col>
+                    </v-row>
+    
+                    <!-- CARDS -->
+                    <v-row no-gutters class="flex-grow-1" justify="center">
+                        <v-col cols="12" class="d-flex justify-center align-center">
+                            <v-container>
+                                <CardsLargeContainer :items="items" v-if="$vuetify.breakpoint.lgAndUp" :recipes="recipes"> </CardsLargeContainer>
+                                <CardsSmallContainer :items="items" v-else :recipes="recipes"> </CardsSmallContainer>
+                            </v-container>
+                        </v-col>
+                    </v-row>
+    
+                    <!-- NEXT -->
+                    <v-row justify="center" class="flex-grow-0 py-4">
+                        <v-btn @click="$vuetify.goTo('#here', {})" fab class="primary--text white mb-4">
+                            <v-icon id="here"> fa fa-arrow-down</v-icon>
+                        </v-btn>
+                    </v-row>
+    
+                </v-container>
+            </v-lazy>
+        `
+    })
+
+    Vue.component("CardsLargeContainer", {
+        props: {
+            items: {type: Array, default: []},
+            recipes: {type: Array, default: []}
+        },
+        template: `
+            <v-row>
+                <v-col cols="12" class="text-h4 primary--text font-weight-bold text-center">
+                    Or browse the various sections
+                </v-col>
+                <v-col cols="3" class="rotate-0">
+                    <v-row>
+                        <FairCard :item="items[0]"> </FairCard>
+                    </v-row>
+                    <v-row>
+                       <Recipe :recipe="recipes[0]" />
+                    </v-row>
+                </v-col>
+                <v-col cols="3">
+                    <v-row>
+                        <FairCard :item="items[1]"> </FAIRCard>
+                    </v-row>
+                    <v-row>
+                        <Recipe :recipe="recipes[1]" />
+                    </v-row>
+                </v-col>
+                <v-col cols="3">
+                    <v-row>
+                        <FairCard :item="items[2]"> </FAIRCard>
+                    </v-row>
+                    <v-row>
+                        <Recipe :recipe="recipes[2]" />
+                    </v-row>
+                </v-col>
+                <v-col cols="3" class="rotate-3">
+                    <v-row>
+                        <FairCard :item="items[3]"> </FAIRCard>
+                    </v-row>
+                    <v-row>
+                        <Recipe :recipe="recipes[3]" :disabled="true" />
+                    </v-row>
+                </v-col>
+            </v-row>
+        `
+    })
+    Vue.component("CardsSmallContainer", {
+        props: {
+            items: {type: Array, default: []},
+            recipes: {type: Array, default: []}
+        },
+        template: `
+            <v-row no-gutters>
+                <v-col cols="12" class="text-h4 primary--text font-weight-bold text-center">
+                    Or browse the various sections
+                </v-col>
+                <v-col cols="12">
+                    <v-container class="pa-0">
+                        <v-row>
+                            <v-col cols="12" md="6">
+                                <FairCard :item="items[0]"> </FairCard>
+                            </v-col>
+                            <v-col cols="12" md="6">
+                                <FairCard :item="items[1]"> </FairCard>
+                            </v-col>
+                            <v-col cols="12" md="6">
+                                <FairCard :item="items[2]"> </FairCard>
+                            </v-col>
+                            <v-col cols="12" md="6">
+                                <FairCard :item="items[3]"> </FairCard>
+                            </v-col>
+                        </v-row>
+                        <v-row>
+                            <v-col cols="12" md="6">
+                                <Recipe :recipe="recipes[0]" />
+                            </v-col>
+                            <v-col cols="12" md="6">
+                                <Recipe :recipe="recipes[1]" />
+                            </v-col>
+                            <v-col cols="12" md="6">
+                                <Recipe :recipe="recipes[2]" />
+                            </v-col>
+                            <v-col cols="12" md="6">
+                                <Recipe :recipe="recipes[3]" />
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </v-col>
+            </v-row>
+        `
+    })
+
+    Vue.component("FairCard", {
+        props: {
+            item: {type: Object, default: {}},
+        },
+        template: `
+            <v-col cols="12">
+                <v-card color="primary lighten-1" class="d-flex flex-column animate__animated animate__zoomInDown homeFAIRCard">
+                    <v-card-title class="text-h5 white--text">
+                        <v-btn
+                            fab
+                            class="text-h4 mr-3 white primary--text d-flex justify-center align-center"
+                        >
+                            {{ item.icon }}
+                        </v-btn>
+                        {{ item.title }}
+                    </v-card-title>
+                    <v-card-text class="primary lighten-1 grey--text d-flex flex-column flex-grow-1" style="flex-grow:1">
+                        <div style="flex-grow:1">
+                          <p class="pb-0 mb-0 grey--text"> <b> EXEMPLAR RECIPES <b> </p>
+                          <ul>
+                            <li v-for="(content, y) in item.content" :key="'content_' + item.title + y">
+                                <a :href="content.link" class="white--text"> {{ content.text }} </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <v-btn color="primary white--text" class="mx-0" :href="item.link">
+                            Learn more
+                        </v-btn>
+                    </v-card-text>
+                </v-card>
+            </v-col>
+        `
+    })
+    Vue.component('Recipe', {
+        props: {
+            recipe: {type: Object, default: {}}
+        },
+        template: `
+             <v-col cols="12">
+                    <v-card class="white--text primary lighten-1 animate__animated animate__zoomInUp" style="width:100%">
+                        <v-card-title class="d-flex justify-center align-center flex-column">
+                            {{ recipe.title }} <br>
+                            <v-btn x-large fab><v-icon class="primary--text"> {{ recipe.icon }} </v-icon></v-btn>
+                        </v-card-title>
+                        <v-card-actions class="d-flex">
+                            <v-btn color="primary white--text flex-grow-1" class="mx-0" :href="recipe.link">
+                                Learn more
+                            </v-btn>
+                        </v-card-actions>
+                </v-card>
+             </v-col>
+        `
+    })
+
+    /** BOTTOM SCREEN **/
+
+    Vue.component('userstext', {
+        template: `
+            <v-col
+               cols="12"
+               sm="12"
+               xs="12"
+               md="12"
+               lg="12"
+               xl="6"
+               class="d-flex flex-column justify-start"
+               :class="$vuetify.breakpoint.xlOnly ? 'align-start' : 'align-center'"
+            >
+                <h2 class="white--text text-h2 pb-4" style="border-bottom:10px solid"> Users </h2>
+                <p class="px-2 text-h5" :class="$vuetify.breakpoint.xlOnly ? 'text-left' : 'text-center'">
+                    If you are a <span class="secondary--text">researcher</span> or <span class="secondary--text">data steward</span> we assist you in
+                    your FAIRification journey.
+                    <br>
+                    If you are a <span class="secondary--text">policymaker</span> or <span class="secondary--text">trainer</span>
+                    we provide you with practical examples to recommend in your guidance and use in your educational material.
+                    <br>
+                    If you are a <span class="secondary--text">data manager professional</span> also contribute recipes, share your FAIR expertise, and get credited!
+                </p>
+            </v-col>
+        `
+    })
+    Vue.component('userscards', {
+        computed: {
+            styles() {
+                let styles = ''
+                this.$vuetify.breakpoint.mdAndUp ? styles += ' height: 200px; ' : styles += ' height:150px; '
+                this.$vuetify.breakpoint.lgAndUp ? styles += ' padding: 0 255px; ' : styles += 'padding: 0 10px;'
+                return styles
+            }
+        },
+        template: `
+            <v-col
+               cols="12"
+               sm="12"
+               xs="12"
+               md="12"
+               lg="12"
+               xl="6"
+               class="d-flex flex-column justify-center align-start"
+            >
+                <v-container style="height: 100%;">
+                    <v-row justify="center" :style="$vuetify.breakpoint.mdAndUp ? 'height: 200px' : 'height:150px'">
+                        <v-card
+                            style="height:100%"
+                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
+                            rounded="circle" color="white"
+                            class="d-flex flex-column justify-center align-center text-h3 secondary--text"
+                        >
+                            <span>Use</span> <span>it</span>
+                        </v-card>
+                    </v-row>
+                    <v-row :style="styles" class="d-flex" justify="space-between">
+                        <v-card
+                            class="flex-grow-0 d-flex flex-column justify-center align-center text-h3 secondary--text"
+                            style="height:100%"
+                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
+                            rounded="circle" color="white"
+                        >
+                            <span>Join</span> <span>it</span>
+                        </v-card>
+                        <div class="flex-grow-1"></div>
+                        <v-card
+                            class="flex-grow-0 d-flex flex-column justify-center align-center text-h3 secondary--text"
+                            style="height:100%"
+                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
+                            rounded="circle" color="white"
+                        >
+                            <span>Adopt</span> <span>it</span>
+                        </v-card>
+                    </v-row>
+                </v-container>
+            </v-col>
+        `
+    })
+
+    Vue.component('contributetext', {
+        template: `
+            <v-col
+               cols="12"
+               sm="12"
+               xs="12"
+               md="12"
+               lg="12"
+               xl="6"
+               class="d-flex flex-column justify-end"
+               :class="$vuetify.breakpoint.xlOnly ? 'align-end' : 'align-center'"
+            >
+                <h2 class="text-left white--text text-h2 pb-4" style="border-bottom:10px solid"> Contributions </h2>
+                <p class="text-h5 px-2" :class="$vuetify.breakpoint.xlOnly ? 'text-right' : 'text-center'">
+                    As a community-driven <b class="secondary--text">live resource</b>, recipes are added and improved, iteratively, covering more
+                    use cases, in an open manner, moderated by an Editorial Board.
+                    Join our thriving <a class="secondary--text" href='./recipes/community.html#fcb-community'>community</a>
+                    of Life Science professionals and FAIR experts from the academic and
+                    industry sectors and <a class="secondary--text" href='./recipes/help.html'>contribute</a> to get credited via your ORCID. <br>
+                    For any question, contact us at <a class="secondary--text" href='mailto:fairplus-cookbook@elixir-europe.org'>fairplus-cookbook@elixir-europe.org</a>.
+                </p>
+            </v-col>
+        `
+    })
+    Vue.component('contributecards', {
+        computed: {
+            styles() {
+                let styles = ''
+                this.$vuetify.breakpoint.mdAndUp ? styles += ' height: 200px; ' : styles += ' height:150px; '
+                this.$vuetify.breakpoint.lgAndUp ? styles += ' padding: 0 255px; ' : styles += 'padding: 0 10px;'
+                return styles
+            },
+        },
+        template: `
+            <v-col
+               cols="12"
+               sm="12"
+               xs="12"
+               md="12"
+               lg="12"
+               xl="6"
+               class="d-flex flex-column justify-end align-end"
+            >
+                <v-container>
+                    <v-row :style="styles" class="d-flex" justify="space-between">
+                        <v-card
+                            class="flex-grow-0 d-flex justify-center align-center flex-column"
+                            :class="$vuetify.breakpoint.mdAndUp ? 'text-h5' : 'text-h6'"
+                            style="height:100%"
+                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
+                            rounded="circle" color="white"
+                        >
+                            <span class=" secondary--text" :class="$vuetify.breakpoint.mdAndUp ? 'text-h1' : 'text-h2'">
+                                71
+                            </span>
+                            <span class="primary--text">Recipes</span>
+                        </v-card>
+                        <div class="flex-grow-1"></div>
+                        <v-card
+                            style="height:100%"
+                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
+                            rounded="circle" color="white"
+                            class="d-flex justify-center align-center flex-column"
+                            :class="$vuetify.breakpoint.mdAndUp ? 'text-h5' : 'text-h6'"
+                        >
+                            <span class=" secondary--text" :class="$vuetify.breakpoint.mdAndUp ? 'text-h1' : 'text-h2'">
+                                91
+                            </span>
+                            <span class="primary--text">Authors</span>
+                        </v-card>
+                    </v-row>
+                    <v-row justify="center" :style="$vuetify.breakpoint.mdAndUp ? 'height: 200px' : 'height:150px'">
+                        <v-card
+                            class="flex-grow-0 d-flex justify-center align-center flex-column"
+                            :class="$vuetify.breakpoint.mdAndUp ? 'text-h5' : 'text-h6'"
+                            style="height:100%"
+                            :style="$vuetify.breakpoint.mdAndUp ? 'width:200px' : 'width:150px'"
+                            rounded="circle" color="white"
+                        >
+                           <span class=" secondary--text" :class="$vuetify.breakpoint.mdAndUp ? 'text-h1' : 'text-h2'">
+                               18
+                           </span>
+
+                           <span class="primary--text">Executable</span>
+                        </v-card>
+                    </v-row>
+                </v-container>
+            </v-col>
+        `
+    })
+
+</script>
+                    </v-row>
+                
+            </v-container>
+        </v-row>
+    </v-container>
+</v-app>
+
+
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+
+<!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-171697285-1', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+<v-container fluid>
+    <v-row no-gutter>
+        <v-col cols="12"><footer class="footer" style=" ">
+    <div class="container-md mt-4">
+      <div class="row" style="display:flex; justify-content: center">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
+            <div class="footerImages">
+              <a href="https://europa.eu/"><img src="/_static/images/logo/eu-flag.png" height="40" alt="EU flag"></a>
+              <a href="https://www.imi.europa.eu/"><img src="/_static/images/logo/imi-logo.png" height="40" alt="IMI logo"></a>
+              <a href="https://efpia.eu"><img src="/_static/images/logo/efpia-logo.png" height="40" alt="EFPIA logo"></a>
+            </div>
+            <div class="mb-3"> Grant agreement 802750 </div>
+          </div>
+          <div class="col-5 col-sm-2 col-xs-5 col-md-2 col-lg-2 col-xl-2">
+              <ul>
+                <li><a href="mailto:fairplus-cookbook@elixir-europe.org"> Contact us </a></li>
+                <li><a href="https://fairplus-project.eu" target="_blank"> FAIRplus </a> </li>
+              </ul>
+          </div>
+          <div class="col-5 col-sm-2 col-xs-5 col-md-2 col-lg-2 col-xl-2">
+              <ul>
+                <li> <a href="https://faircookbook.elixir-europe.org/content/recipes/afterword/people.html  "> Contributors </a> </li> </li>
+                <li> <a href="https://faircookbook.elixir-europe.org/content/recipes/help.html"> How to contribute </a> </li>
+              </ul>
+          </div>
+          <div class="col-12 col-sm-4 col-xs-12 col-md-3 col-lg-3 col-xl-3 pb-5">
+            <a class="mr-3" href="https://elixir-europe.org/" target="_blank"><img src="/_static/images/logo/Elixir/ELIXIR.png" height="50" alt="Elixir logo"></a>
+            <a href="https://fairplus-project.eu/"><img src="https://fairplus-project.eu/images/fairplus-logo.png" alt="FAIRplus logo" style="background:white;padding:5px;height:33px;"></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="padding:0">
+        <div class="row" style="padding:0; margin:0">
+            <div class="col-12 purple-dark">
+                The FAIR Cookbook is licensed under the
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                    Creative Commons Attribution 4.0 International
+                </a> (CC BY 4.0) license.
+            </div>
+        </div>
+        <div class="row extra_footer d-none">
+            <script> mermaid.init() </script>
+        </div>
+    </div>
+
+</footer> </v-col>
+    </v-row>
+</v-container>
+<script type="application/javascript">
+    const vuetify = new Vuetify({
+        theme: {
+            themes: {
+                light: {
+                    primary: '#421C6E',
+                    secondary: '#FC7A4A',
+                    accent: '#8038D1',
+                    error: '#FF5252',
+                    info: '#2196F3',
+                    success: '#7E0038',
+                    warning: '#FFC107'
+                }
+            }
+        },
+        icons: { iconfont: 'fa4' }
+    })
+    const my_vue = new Vue({ el: '#app', vuetify: vuetify })
+
+</script>
+  </body>
+</html>
