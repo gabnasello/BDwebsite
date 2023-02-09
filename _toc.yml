@@ -32,27 +32,36 @@
 
 - part: DOCKER CONTAINERS
   chapters:
-      - file: content/recipes/commbini-env 
-        title: commbini-env
-        numbered: false
-      - file: content/recipes/datascience-env 
-        title: datascience-env
-        numbered: false
-      - file: content/recipes/fiji-env 
-        title: fiji-env
-        numbered: false
-      - file: content/recipes/flowcyto-env 
-        title: flowcyto-env
-        numbered: false
-      - file: content/recipes/image3d-env 
-        title: image3d-env
-        numbered: false
-      - file: content/recipes/sc-env 
-        title: sc-env
-        numbered: false
-      - file: content/recipes/slicer-env 
-        title: slicer-env
-        numbered: false
+    - file: content/recipes/commbini-env 
+      title: commbini-env
+      numbered: false
+    
+    - file: content/recipes/datascience-env 
+      title: datascience-env
+      numbered: false
+
+    - file: content/recipes/fiji-env 
+      title: fiji-env
+      numbered: false
+
+    - file: content/recipes/flowcyto-env 
+      title: flowcyto-env
+      numbered: false
+
+    - file: content/recipes/image3d-env 
+      title: image3d-env
+      numbered: false
+
+    - file: content/recipes/sc-env 
+      title: sc-env
+      numbered: false
+
+    - file: content/recipes/slicer-env 
+      title: slicer-env
+      numbered: false
+      sections:
+      - file: content/recipes/slicer-env/use
+        title: Use the container       
 
 - part: JOIN US
   chapters:
